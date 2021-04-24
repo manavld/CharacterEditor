@@ -5,9 +5,10 @@ using UnityEngine;
 public class Blendshapes : MonoBehaviour
 {
     //all blendshapes
-    private float BodyTypeEctomorph_Slider = .0f;
-    private float BodyTypeEndomorph_Slider = .0f;
-    private float NoseNostrilsWidth_Slider = .0f;
+    private float Eyes_Narrow_Value = .0f;
+    private float Eyes_Wide_Value = .0f;
+    private float BodyTypeEctomorph_Value = .0f;
+    private float BodyTypeEndomorph_Value = .0f;
 
     private SkinnedMeshRenderer SMR;
 
@@ -22,10 +23,10 @@ public class Blendshapes : MonoBehaviour
     // Update BLENDSHAPES
     void Update()
     {
-        SMR.SetBlendShapeWeight(51, BodyTypeEctomorph_Slider);
-        SMR.SetBlendShapeWeight(52, BodyTypeEndomorph_Slider);
+        SMR.SetBlendShapeWeight(51, BodyTypeEctomorph_Value);
+        SMR.SetBlendShapeWeight(52, BodyTypeEndomorph_Value);
         //Combination Fix
-        SMR.SetBlendShapeWeight(53, (BodyTypeEctomorph_Slider * BodyTypeEndomorph_Slider)/100);
+        SMR.SetBlendShapeWeight(53, (BodyTypeEctomorph_Value * BodyTypeEndomorph_Value) /100);
     }
 
 
@@ -34,16 +35,18 @@ public class Blendshapes : MonoBehaviour
     //--------------------
 
     //UPDATE ALL SLIDERS
+
+
+
+
+
     public void EctomorphValue(float new_value)
     {
-        BodyTypeEctomorph_Slider = new_value;
+        BodyTypeEctomorph_Value = new_value;
     }
-    public void EndomorphhValue(float new_value)
+    public void EndomorphValue(float new_value)
     {
-        BodyTypeEndomorph_Slider = new_value;
+        BodyTypeEndomorph_Value = new_value;
     }
-    public void NoseWidthValue(float new_value)
-    {
-        NoseNostrilsWidth_Slider = new_value;
-    }
+  
 }

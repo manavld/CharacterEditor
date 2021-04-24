@@ -233,7 +233,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 5.9, y: 20.5}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 280, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94726405
 MonoBehaviour:
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nostrils Width
+  m_text: Eyes Width Position
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2073,6 +2073,54 @@ PrefabInstance:
       propertyPath: m_BlendShapeWeights.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[7]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[9]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[12]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[37]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[39]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[40]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[43]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[44]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[53]
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c70312a2b755f6141808cb1b1f16c47b, type: 3}
 --- !u!1 &1314507139
@@ -2360,7 +2408,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 729915373}
         m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
-        m_MethodName: EctomorphValue
+        m_MethodName: EctomorphSlider
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2538,7 +2586,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2078073968}
         m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
-        m_MethodName: EndomorphhValue
+        m_MethodName: EndomorphValue
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2562,7 +2610,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 729915373}
         m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
-        m_MethodName: EndomorphhValue
+        m_MethodName: EndomorphSlider
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3009,7 +3057,7 @@ GameObject:
   - component: {fileID: 1928359943}
   - component: {fileID: 1928359944}
   m_Layer: 5
-  m_Name: NoseNostrils_Width
+  m_Name: EyesPos_Width
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3089,9 +3137,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2078073968}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
-        m_MethodName: NoseWidthValue
+      - m_Target: {fileID: 1682073714}
+        m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
+        m_MethodName: SliderValueUpdate
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3101,9 +3149,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1682073714}
-        m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
-        m_MethodName: SliderValueUpdate
+      - m_Target: {fileID: 729915373}
+        m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
+        m_MethodName: EyesWidthSlider
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
