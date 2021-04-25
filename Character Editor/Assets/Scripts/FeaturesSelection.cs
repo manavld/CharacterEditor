@@ -13,6 +13,8 @@ public class FeaturesSelection : MonoBehaviour
     public Button Mouth;
     public Button Eyes;
 
+    public Button Randomize, BackToMenu;
+
     //public Button BackToFeatureSelection;
     //public Button BackToMenu;
 
@@ -24,6 +26,12 @@ public class FeaturesSelection : MonoBehaviour
     public GameObject MouthWindow;
     public GameObject EyesWindow;
 
+
+
+   
+
+
+
     public void OnClickBODY()
     {
         Body.gameObject.SetActive(false);
@@ -33,6 +41,8 @@ public class FeaturesSelection : MonoBehaviour
         Chin.gameObject.SetActive(false);
         Mouth.gameObject.SetActive(false);
         Eyes.gameObject.SetActive(false);
+        Randomize.gameObject.SetActive(false);
+        BackToMenu.gameObject.SetActive(false);
 
         BodyWindow.gameObject.SetActive(true);
     }
@@ -46,6 +56,8 @@ public class FeaturesSelection : MonoBehaviour
         Chin.gameObject.SetActive(false);
         Mouth.gameObject.SetActive(false);
         Eyes.gameObject.SetActive(false);
+        Randomize.gameObject.SetActive(false);
+        BackToMenu.gameObject.SetActive(false);
 
         HeadWindow.gameObject.SetActive(true);
     }
@@ -59,6 +71,8 @@ public class FeaturesSelection : MonoBehaviour
         Chin.gameObject.SetActive(false);
         Mouth.gameObject.SetActive(false);
         Eyes.gameObject.SetActive(false);
+        Randomize.gameObject.SetActive(false);
+        BackToMenu.gameObject.SetActive(false);
 
         NoseWindow.gameObject.SetActive(true);
     }
@@ -72,6 +86,8 @@ public class FeaturesSelection : MonoBehaviour
         Chin.gameObject.SetActive(false);
         Mouth.gameObject.SetActive(false);
         Eyes.gameObject.SetActive(false);
+        Randomize.gameObject.SetActive(false);
+        BackToMenu.gameObject.SetActive(false);
 
         EarWindow.gameObject.SetActive(true);
     }
@@ -85,6 +101,8 @@ public class FeaturesSelection : MonoBehaviour
         Chin.gameObject.SetActive(false);
         Mouth.gameObject.SetActive(false);
         Eyes.gameObject.SetActive(false);
+        Randomize.gameObject.SetActive(false);
+        BackToMenu.gameObject.SetActive(false);
 
         ChinWindow.gameObject.SetActive(true);
     }
@@ -98,6 +116,8 @@ public class FeaturesSelection : MonoBehaviour
         Chin.gameObject.SetActive(false);
         Mouth.gameObject.SetActive(false);
         Eyes.gameObject.SetActive(false);
+        Randomize.gameObject.SetActive(false);
+        BackToMenu.gameObject.SetActive(false);
 
         MouthWindow.gameObject.SetActive(true);
     }
@@ -111,6 +131,8 @@ public class FeaturesSelection : MonoBehaviour
         Chin.gameObject.SetActive(false);
         Mouth.gameObject.SetActive(false);
         Eyes.gameObject.SetActive(false);
+        Randomize.gameObject.SetActive(false);
+        BackToMenu.gameObject.SetActive(false);
 
         EyesWindow.gameObject.SetActive(true);
     }
@@ -126,5 +148,8 @@ public class FeaturesSelection : MonoBehaviour
         Chin.gameObject.SetActive(true);
         Mouth.gameObject.SetActive(true);
         Eyes.gameObject.SetActive(true);
+        Randomize.gameObject.SetActive(true);
+        BackToMenu.gameObject.SetActive(true);
+
     }
 }
