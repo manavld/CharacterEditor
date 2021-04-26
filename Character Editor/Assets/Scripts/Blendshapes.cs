@@ -148,6 +148,8 @@ public class Blendshapes : MonoBehaviour
         SMR.SetBlendShapeWeight(52, BodyTypeEndomorph_Value_52);
         //Combination Fix
         SMR.SetBlendShapeWeight(53, (BodyTypeEctomorph_Value_51 * BodyTypeEndomorph_Value_52) /100);
+
+        
     }
 
 
