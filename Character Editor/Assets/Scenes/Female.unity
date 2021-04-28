@@ -593,8 +593,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NosePointWidthSlider
         m_Mode: 0
         m_Arguments:
@@ -684,8 +684,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: HeadSquareSlider
         m_Mode: 0
         m_Arguments:
@@ -799,8 +799,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: ForeheadWidthSlider
         m_Mode: 0
         m_Arguments:
@@ -1016,7 +1016,7 @@ Transform:
   m_LocalScale: {x: 99.54235, y: 99.54235, z: 99.54235}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &33053535
 GameObject:
@@ -1493,8 +1493,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: ForeheadSizeSlider
         m_Mode: 0
         m_Arguments:
@@ -1541,6 +1541,23 @@ RectTransform:
   m_AnchoredPosition: {x: 259, y: -85}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &64778558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6630668333336187512, guid: c206617a5694d7140899fced5da570ea, type: 3}
+  m_PrefabInstance: {fileID: 525998174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &64778561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64778558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de557bbb003b09c45a3ffd5efe24606e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &74857111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,7 +2842,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -3395,7 +3412,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -3775,8 +3792,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NosePointStraightProfileSlider
         m_Mode: 0
         m_Arguments:
@@ -3944,7 +3961,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 8.13, y: 6.52, z: 0}
 --- !u!1 &249043123
 GameObject:
@@ -5018,8 +5035,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EyesSizeSlider
         m_Mode: 0
         m_Arguments:
@@ -5160,7 +5177,7 @@ Transform:
   m_LocalScale: {x: 99.54235, y: 99.54235, z: 99.54235}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &345266012
 GameObject:
@@ -6663,8 +6680,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EndomorphValue
         m_Mode: 0
         m_Arguments:
@@ -6678,18 +6695,6 @@ MonoBehaviour:
       - m_Target: {fileID: 310912694}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 244531630}
-        m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
-        m_MethodName: EndomorphSlider
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7054,8 +7059,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: ChinPositionSlider
         m_Mode: 0
         m_Arguments:
@@ -7918,6 +7923,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &500716365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c206617a5694d7140899fced5da570ea, type: 3}
+  m_PrefabInstance: {fileID: 525998174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &500716366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500716365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988373790a4a9894c8f160d09e354dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &500716367
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500716365}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.05
+  m_Height: 0.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &503545470
 GameObject:
   m_ObjectHideFlags: 0
@@ -8099,7 +8135,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c206617a5694d7140899fced5da570ea, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c206617a5694d7140899fced5da570ea, type: 3}
       propertyPath: m_LocalScale.x
@@ -8593,7 +8629,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -9485,7 +9521,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -9671,7 +9707,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 33053536}
   m_Direction: 0
   m_MinValue: -100
-  m_MaxValue: 100
+  m_MaxValue: 70
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -9689,8 +9725,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 244531630}
-        m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
+      - m_Target: {fileID: 64778561}
+        m_TargetAssemblyTypeName: F_BlendshapesEyes, Assembly-CSharp
         m_MethodName: EyesWidthSlider
         m_Mode: 0
         m_Arguments:
@@ -9701,8 +9737,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1359985484}
+        m_TargetAssemblyTypeName: F_BlendshapesEyes, Assembly-CSharp
+        m_MethodName: EyesWidthSlider
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EyesWidthSlider
         m_Mode: 0
         m_Arguments:
@@ -9943,8 +9991,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: ChinShapeSquareSlider
         m_Mode: 0
         m_Arguments:
@@ -10058,8 +10106,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EarLobesSlider
         m_Mode: 0
         m_Arguments:
@@ -10307,8 +10355,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: ChinShapePointySlider
         m_Mode: 0
         m_Arguments:
@@ -11002,8 +11050,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: UpperLipSlider
         m_Mode: 0
         m_Arguments:
@@ -11216,8 +11264,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NosePointRoundFrontSlider
         m_Mode: 0
         m_Arguments:
@@ -11496,7 +11544,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -12680,7 +12728,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 11.93, y: 0, z: 0}
 --- !u!1 &814597023
 GameObject:
@@ -12899,7 +12947,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -13461,8 +13509,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EarSizeSlider
         m_Mode: 0
         m_Arguments:
@@ -13780,7 +13828,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -14566,8 +14614,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: LowerLipsSlider
         m_Mode: 0
         m_Arguments:
@@ -16382,8 +16430,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NosePointRoundProfileSlider
         m_Mode: 0
         m_Arguments:
@@ -16946,15 +16994,15 @@ MonoBehaviour:
   m_FillRect: {fileID: 1998422329}
   m_HandleRect: {fileID: 1880164642}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: -100
   m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EctomorphValue
         m_Mode: 0
         m_Arguments:
@@ -16968,18 +17016,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1999932085}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 244531630}
-        m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
-        m_MethodName: EctomorphSlider
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17483,8 +17519,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NosePointStraightFrontSlider
         m_Mode: 0
         m_Arguments:
@@ -18721,8 +18757,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EyesShapeRoundSlider
         m_Mode: 0
         m_Arguments:
@@ -19125,7 +19161,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -19262,8 +19298,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: HeadOvalSlider
         m_Mode: 0
         m_Arguments:
@@ -19377,8 +19413,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: CheekbonesPositionSlider
         m_Mode: 0
         m_Arguments:
@@ -19519,7 +19555,7 @@ Transform:
   m_LocalScale: {x: 99.54235, y: 99.54235, z: 99.54235}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -68.67, y: 0, z: 0}
 --- !u!1 &1281365058
 GameObject:
@@ -20315,7 +20351,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -20385,6 +20421,23 @@ RectTransform:
   m_AnchoredPosition: {x: 280, y: 48}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1359985481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7988082282658739682, guid: c206617a5694d7140899fced5da570ea, type: 3}
+  m_PrefabInstance: {fileID: 525998174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1359985484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359985481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de557bbb003b09c45a3ffd5efe24606e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1365996789
 GameObject:
   m_ObjectHideFlags: 0
@@ -20507,7 +20560,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -21522,7 +21575,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -21769,7 +21822,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -22545,8 +22598,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NoseBaseLengthSlider
         m_Mode: 0
         m_Arguments:
@@ -22876,8 +22929,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EyesShapeAlmondSlider
         m_Mode: 0
         m_Arguments:
@@ -23015,8 +23068,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NoseBumpSlider
         m_Mode: 0
         m_Arguments:
@@ -23260,6 +23313,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530714324}
   m_CullTransparentMesh: 0
+--- !u!1 &1597105455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8645023440985867017, guid: c206617a5694d7140899fced5da570ea, type: 3}
+  m_PrefabInstance: {fileID: 525998174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1597105456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597105455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f4833c5297f1640b0483f355bc5294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1600937765
 GameObject:
   m_ObjectHideFlags: 0
@@ -23414,7 +23484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 11.536, y: -10.861, z: 17.257}
 --- !u!1 &1606134402
 GameObject:
@@ -23767,8 +23837,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: MouthWidthSlider
         m_Mode: 0
         m_Arguments:
@@ -24435,8 +24505,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: HeadRoundSlider
         m_Mode: 0
         m_Arguments:
@@ -24589,7 +24659,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -24730,8 +24800,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NoseBaseWidthSlider
         m_Mode: 0
         m_Arguments:
@@ -26035,8 +26105,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NostrilsWidth
         m_Mode: 0
         m_Arguments:
@@ -26126,8 +26196,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: EarDistanceSlider
         m_Mode: 0
         m_Arguments:
@@ -27907,7 +27977,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -29101,7 +29171,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1503210614}
+      - m_Target: {fileID: 500716366}
         m_TargetAssemblyTypeName: MouseRotation, Assembly-CSharp
         m_MethodName: onResetRotation
         m_Mode: 1
@@ -30457,8 +30527,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: ChinProminenceSlider
         m_Mode: 0
         m_Arguments:
@@ -30572,8 +30642,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: ChinShapeRoundSlider
         m_Mode: 0
         m_Arguments:
@@ -31277,8 +31347,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023661403}
-        m_TargetAssemblyTypeName: Blendshapes, Assembly-CSharp
+      - m_Target: {fileID: 1597105456}
+        m_TargetAssemblyTypeName: F_Blendshapes, Assembly-CSharp
         m_MethodName: NosePointPositionSlider
         m_Mode: 0
         m_Arguments:
