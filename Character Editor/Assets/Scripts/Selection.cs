@@ -16,4 +16,9 @@ public class Selection : MonoBehaviour
         SceneManager.LoadScene("Male");
     }
 
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
 }
