@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Selection : MonoBehaviour
+public class SceneSelection : MonoBehaviour
 {
     
     public void LoadFemaleScene()
