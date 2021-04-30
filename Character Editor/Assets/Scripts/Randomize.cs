@@ -17,6 +17,8 @@ public class Randomize : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //UPDATE ALL SLIDERS TEXT
+
             Ectomorph.transform.Find("Value").GetComponent<TextMeshProUGUI>().text = (Mathf.Round(Ectomorph.value * 100.0f) / 100.0f).ToString();
             Endomorph.transform.Find("Value").GetComponent<TextMeshProUGUI>().text = (Mathf.Round(Endomorph.value * 100.0f) / 100.0f).ToString();
             HeadOval.transform.Find("Value").GetComponent<TextMeshProUGUI>().text = (Mathf.Round(HeadOval.value * 100.0f) / 100.0f).ToString();
@@ -56,16 +58,7 @@ public class Randomize : MonoBehaviour
 
     public void OnRandomize()
     {
-        //activate
-        FeaturesSelection.BodyWindow.gameObject.SetActive(true);
-        FeaturesSelection.HeadWindow.gameObject.SetActive(true);
-        FeaturesSelection.NoseWindow.gameObject.SetActive(true);
-        FeaturesSelection.EarWindow.gameObject.SetActive(true);
-        FeaturesSelection.ChinWindow.gameObject.SetActive(true);
-        FeaturesSelection.MouthWindow.gameObject.SetActive(true);
-        FeaturesSelection.EyesWindow.gameObject.SetActive(true);
-
-        
+        //100 value
         HeadOval.value = Random.Range(0, 100);
         HeadRound.value = Random.Range(0, 100);
         HeadSquare.value = Random.Range(0, 100);
@@ -80,7 +73,7 @@ public class Randomize : MonoBehaviour
         ChinPointy.value = Random.Range(0, 100);
         EyesRound.value = Random.Range(0, 100);
         EyesAlmond.value = Random.Range(0, 100);
-        //200
+        //200 value
         Ectomorph.value = Random.Range(-100, 100);
         Endomorph.value = Random.Range(-100, 100);
         ForeheadSize.value = Random.Range(-100, 100);
@@ -100,15 +93,7 @@ public class Randomize : MonoBehaviour
         LipLSize.value = Random.Range(-100, 100);
         EyesPos.value = Random.Range(-100, 100);
         EyesSize.value = Random.Range(-100, 100);
-
-        //deactivate
-        FeaturesSelection.BodyWindow.gameObject.SetActive(false);
-        FeaturesSelection.HeadWindow.gameObject.SetActive(false);
-        FeaturesSelection.NoseWindow.gameObject.SetActive(false);
-        FeaturesSelection.EarWindow.gameObject.SetActive(false);
-        FeaturesSelection.ChinWindow.gameObject.SetActive(false);
-        FeaturesSelection.MouthWindow.gameObject.SetActive(false);
-        FeaturesSelection.EyesWindow.gameObject.SetActive(false);
+       
     }
 
 }

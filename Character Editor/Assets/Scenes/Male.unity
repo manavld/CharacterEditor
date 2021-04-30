@@ -226,7 +226,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 637327722}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 275761995}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -701,7 +701,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1662499110}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -3351,7 +3351,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1360403104}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -3508,7 +3508,6 @@ GameObject:
   - component: {fileID: 222589392}
   - component: {fileID: 222589395}
   - component: {fileID: 222589394}
-  - component: {fileID: 222589393}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -3535,18 +3534,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &222589393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222589391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &222589394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4461,7 +4448,6 @@ GameObject:
   - component: {fileID: 275761994}
   - component: {fileID: 275761997}
   - component: {fileID: 275761996}
-  - component: {fileID: 275761995}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -4488,18 +4474,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &275761995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275761993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &275761996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5123,7 +5097,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 922203099}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -5700,7 +5674,6 @@ GameObject:
   - component: {fileID: 334992944}
   - component: {fileID: 334992946}
   - component: {fileID: 334992945}
-  - component: {fileID: 334992947}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -5826,18 +5799,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334992943}
   m_CullTransparentMesh: 0
---- !u!114 &334992947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334992943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &343343470
 GameObject:
   m_ObjectHideFlags: 0
@@ -6413,7 +6374,6 @@ GameObject:
   - component: {fileID: 389958390}
   - component: {fileID: 389958393}
   - component: {fileID: 389958392}
-  - component: {fileID: 389958391}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -6440,18 +6400,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &389958391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389958389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &389958392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6562,7 +6510,6 @@ GameObject:
   - component: {fileID: 395154745}
   - component: {fileID: 395154748}
   - component: {fileID: 395154747}
-  - component: {fileID: 395154746}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -6589,18 +6536,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &395154746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395154744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &395154747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6958,7 +6893,6 @@ GameObject:
   - component: {fileID: 402708251}
   - component: {fileID: 402708254}
   - component: {fileID: 402708253}
-  - component: {fileID: 402708252}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -6985,18 +6919,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &402708252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402708250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &402708253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7107,7 +7029,6 @@ GameObject:
   - component: {fileID: 447645576}
   - component: {fileID: 447645579}
   - component: {fileID: 447645578}
-  - component: {fileID: 447645577}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -7134,18 +7055,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &447645577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447645575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &447645578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7553,7 +7462,6 @@ GameObject:
   - component: {fileID: 492041539}
   - component: {fileID: 492041542}
   - component: {fileID: 492041541}
-  - component: {fileID: 492041540}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -7580,18 +7488,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &492041540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492041538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &492041541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7702,7 +7598,6 @@ GameObject:
   - component: {fileID: 503115280}
   - component: {fileID: 503115283}
   - component: {fileID: 503115282}
-  - component: {fileID: 503115281}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -7729,18 +7624,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &503115281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503115279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &503115282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8249,7 +8132,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 643643824}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -8875,7 +8758,6 @@ GameObject:
   - component: {fileID: 603446716}
   - component: {fileID: 603446718}
   - component: {fileID: 603446717}
-  - component: {fileID: 603446719}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -9001,18 +8883,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603446715}
   m_CullTransparentMesh: 0
---- !u!114 &603446719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603446715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &612363932
 GameObject:
   m_ObjectHideFlags: 0
@@ -9347,7 +9217,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 395154746}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -9615,7 +9485,6 @@ GameObject:
   - component: {fileID: 637327721}
   - component: {fileID: 637327724}
   - component: {fileID: 637327723}
-  - component: {fileID: 637327722}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -9642,18 +9511,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &637327722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637327720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &637327723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10032,7 +9889,6 @@ GameObject:
   - component: {fileID: 643643823}
   - component: {fileID: 643643826}
   - component: {fileID: 643643825}
-  - component: {fileID: 643643824}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -10059,18 +9915,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &643643824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643643822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &643643825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10309,7 +10153,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1865072932}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -10407,7 +10251,7 @@ GameObject:
   - component: {fileID: 669997866}
   - component: {fileID: 669997867}
   m_Layer: 0
-  m_Name: RandomizeController
+  m_Name: SliderController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10837,7 +10681,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1054532658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -10952,7 +10796,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1802362481}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -12236,7 +12080,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1624519470}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -13094,7 +12938,6 @@ GameObject:
   - component: {fileID: 907680086}
   - component: {fileID: 907680089}
   - component: {fileID: 907680088}
-  - component: {fileID: 907680087}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -13121,18 +12964,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &907680087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907680085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &907680088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13243,7 +13074,6 @@ GameObject:
   - component: {fileID: 921500270}
   - component: {fileID: 921500273}
   - component: {fileID: 921500272}
-  - component: {fileID: 921500271}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -13270,18 +13100,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &921500271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921500269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &921500272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13392,7 +13210,6 @@ GameObject:
   - component: {fileID: 921999539}
   - component: {fileID: 921999542}
   - component: {fileID: 921999541}
-  - component: {fileID: 921999540}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -13419,18 +13236,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &921999540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921999538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &921999541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13541,7 +13346,6 @@ GameObject:
   - component: {fileID: 922203098}
   - component: {fileID: 922203101}
   - component: {fileID: 922203100}
-  - component: {fileID: 922203099}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -13568,18 +13372,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &922203099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 922203097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &922203100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13952,7 +13744,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1490312672}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -14067,7 +13859,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 389958391}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -14359,7 +14151,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 952765338}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -14382,7 +14174,6 @@ GameObject:
   - component: {fileID: 952765337}
   - component: {fileID: 952765340}
   - component: {fileID: 952765339}
-  - component: {fileID: 952765338}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -14409,18 +14200,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &952765338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952765336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &952765339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15579,7 +15358,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1067188999}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -15945,7 +15724,6 @@ GameObject:
   - component: {fileID: 1054532657}
   - component: {fileID: 1054532660}
   - component: {fileID: 1054532659}
-  - component: {fileID: 1054532658}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -15972,18 +15750,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1054532658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054532656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1054532659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16261,7 +16027,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1158164605}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -16284,7 +16050,6 @@ GameObject:
   - component: {fileID: 1067188998}
   - component: {fileID: 1067189001}
   - component: {fileID: 1067189000}
-  - component: {fileID: 1067188999}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -16311,18 +16076,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1067188999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067188997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1067189000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17234,7 +16987,6 @@ GameObject:
   - component: {fileID: 1125892995}
   - component: {fileID: 1125892998}
   - component: {fileID: 1125892997}
-  - component: {fileID: 1125892996}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -17261,18 +17013,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1125892996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1125892994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1125892997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17633,7 +17373,6 @@ GameObject:
   - component: {fileID: 1158164604}
   - component: {fileID: 1158164607}
   - component: {fileID: 1158164606}
-  - component: {fileID: 1158164605}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -17660,18 +17399,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1158164605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158164603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1158164606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18675,7 +18402,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 402708252}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -18773,7 +18500,6 @@ GameObject:
   - component: {fileID: 1254170527}
   - component: {fileID: 1254170530}
   - component: {fileID: 1254170529}
-  - component: {fileID: 1254170528}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -18800,18 +18526,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1254170528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1254170526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1254170529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19579,7 +19293,6 @@ GameObject:
   - component: {fileID: 1281029630}
   - component: {fileID: 1281029633}
   - component: {fileID: 1281029632}
-  - component: {fileID: 1281029631}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -19606,18 +19319,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1281029631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281029629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1281029632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20346,7 +20047,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 492041540}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -20846,7 +20547,6 @@ GameObject:
   - component: {fileID: 1360403103}
   - component: {fileID: 1360403106}
   - component: {fileID: 1360403105}
-  - component: {fileID: 1360403104}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -20873,18 +20573,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1360403104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360403102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1360403105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21603,7 +21291,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1281029631}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -22343,7 +22031,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 334992947}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -22636,7 +22324,6 @@ GameObject:
   - component: {fileID: 1490312671}
   - component: {fileID: 1490312674}
   - component: {fileID: 1490312673}
-  - component: {fileID: 1490312672}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -22663,18 +22350,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1490312672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490312670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1490312673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23027,7 +22702,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 921999540}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -24051,7 +23726,6 @@ GameObject:
   - component: {fileID: 1624519469}
   - component: {fileID: 1624519472}
   - component: {fileID: 1624519471}
-  - component: {fileID: 1624519470}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -24078,18 +23752,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1624519470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624519468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1624519471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24535,7 +24197,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 603446719}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -24570,7 +24232,6 @@ GameObject:
   - component: {fileID: 1662499109}
   - component: {fileID: 1662499112}
   - component: {fileID: 1662499111}
-  - component: {fileID: 1662499110}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -24597,18 +24258,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1662499110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662499108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1662499111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24853,7 +24502,6 @@ GameObject:
   - component: {fileID: 1682073711}
   - component: {fileID: 1682073713}
   - component: {fileID: 1682073712}
-  - component: {fileID: 1682073714}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -24979,18 +24627,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682073710}
   m_CullTransparentMesh: 0
---- !u!114 &1682073714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682073710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1687898339
 GameObject:
   m_ObjectHideFlags: 0
@@ -25824,7 +25460,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1773836944}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -26267,7 +25903,6 @@ GameObject:
   - component: {fileID: 1773836943}
   - component: {fileID: 1773836946}
   - component: {fileID: 1773836945}
-  - component: {fileID: 1773836944}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -26294,18 +25929,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1773836944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773836942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1773836945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26717,7 +26340,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 921500271}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -26740,7 +26363,6 @@ GameObject:
   - component: {fileID: 1802362480}
   - component: {fileID: 1802362483}
   - component: {fileID: 1802362482}
-  - component: {fileID: 1802362481}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -26767,18 +26389,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1802362481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802362479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1802362482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27115,7 +26725,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 503115281}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -27402,7 +27012,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1947548922}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -27425,7 +27035,6 @@ GameObject:
   - component: {fileID: 1865072931}
   - component: {fileID: 1865072934}
   - component: {fileID: 1865072933}
-  - component: {fileID: 1865072932}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -27452,18 +27061,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1865072932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865072930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1865072933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28371,7 +27968,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1125892996}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -28510,7 +28107,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1682073714}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -28936,7 +28533,6 @@ GameObject:
   - component: {fileID: 1947548921}
   - component: {fileID: 1947548924}
   - component: {fileID: 1947548923}
-  - component: {fileID: 1947548922}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -28963,18 +28559,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1947548922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947548920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1947548923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29447,7 +29031,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1254170528}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -29732,7 +29316,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 907680087}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -30091,7 +29675,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 222589393}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -30664,7 +30248,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2109102520}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
@@ -30929,7 +30513,6 @@ GameObject:
   - component: {fileID: 2109102519}
   - component: {fileID: 2109102522}
   - component: {fileID: 2109102521}
-  - component: {fileID: 2109102520}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -30956,18 +30539,6 @@ RectTransform:
   m_AnchoredPosition: {x: 101.6, y: 0.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2109102520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109102518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7308b6b0988df0246b3e68c85c2af5c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2109102521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31356,7 +30927,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 447645577}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
         m_MethodName: SliderValueUpdate
         m_Mode: 0
