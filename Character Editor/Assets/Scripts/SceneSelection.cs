@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneSelection : MonoBehaviour
 {
-    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
     public void LoadFemaleScene()
     {
         SceneManager.LoadScene("Female");
