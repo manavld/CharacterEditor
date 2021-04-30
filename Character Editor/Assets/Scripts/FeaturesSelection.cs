@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class FeaturesSelection : MonoBehaviour
 {
+    public GameObject canvas;
     public Button Body;
     public Button Head;
     public Button Nose;
@@ -18,17 +19,48 @@ public class FeaturesSelection : MonoBehaviour
     //public Button BackToFeatureSelection;
     //public Button BackToMenu;
 
-    public GameObject BodyWindow;
-    public GameObject HeadWindow;
-    public GameObject NoseWindow;
-    public GameObject EarWindow;
-    public GameObject ChinWindow;
-    public GameObject MouthWindow;
-    public GameObject EyesWindow;
+    public static GameObject BodyWindow;
+    public static GameObject HeadWindow;
+    public static GameObject NoseWindow;
+    public static GameObject EarWindow;
+    public static GameObject ChinWindow;
+    public static GameObject MouthWindow;
+    public static GameObject EyesWindow;
 
+    private void Awake()
+    {
+        BodyWindow = canvas.transform.Find("BodyTypesWindow").gameObject;
+        HeadWindow = canvas.transform.Find("HeadShapeWindow").gameObject;
+        NoseWindow = canvas.transform.Find("NoseWindow").gameObject;
+        EarWindow = canvas.transform.Find("EarWindow").gameObject;
+        ChinWindow = canvas.transform.Find("ChinWindow").gameObject;
+        MouthWindow = canvas.transform.Find("MouthWindow").gameObject;
+        EyesWindow = canvas.transform.Find("EyesWindow").gameObject;
+    }
 
+    private void Start()
+    {
+        /*
+        BodyWindow = canvas.transform.Find("BodyTypesWindow").gameObject;
+        HeadWindow = canvas.transform.Find("HeadShapeWindow").gameObject;
+        NoseWindow = canvas.transform.Find("NoseWindow").gameObject;
+        EarWindow = canvas.transform.Find("EarWindow").gameObject;
+        ChinWindow = canvas.transform.Find("ChinWindow").gameObject;
+        MouthWindow = canvas.transform.Find("MouthWindow").gameObject;
+        EyesWindow = canvas.transform.Find("EyesWindow").gameObject;
+        */
+        
+        BodyWindow.gameObject.SetActive(false);
+        HeadWindow.gameObject.SetActive(false);
+        NoseWindow.gameObject.SetActive(false);
+        EarWindow.gameObject.SetActive(false);
+        ChinWindow.gameObject.SetActive(false);
+        MouthWindow.gameObject.SetActive(false);
+        EyesWindow.gameObject.SetActive(false);
+        
+    }
 
-   
+    
 
 
 
@@ -139,7 +171,14 @@ public class FeaturesSelection : MonoBehaviour
 
     public void BackToSelection()
     {
-        this.transform.parent.gameObject.SetActive(false);
+        BodyWindow.gameObject.SetActive(false);
+        HeadWindow.gameObject.SetActive(false);
+        NoseWindow.gameObject.SetActive(false);
+        EarWindow.gameObject.SetActive(false);
+        ChinWindow.gameObject.SetActive(false);
+        MouthWindow.gameObject.SetActive(false);
+        EyesWindow.gameObject.SetActive(false);
+       
 
         Body.gameObject.SetActive(true);
         Head.gameObject.SetActive(true);
@@ -151,5 +190,28 @@ public class FeaturesSelection : MonoBehaviour
         Randomize.gameObject.SetActive(true);
         Next.gameObject.SetActive(true);
 
+    }
+
+    //Randomize Fix
+    public void Activate()
+    {
+        BodyWindow.gameObject.SetActive(true);
+        HeadWindow.gameObject.SetActive(true);
+        NoseWindow.gameObject.SetActive(true);
+        EarWindow.gameObject.SetActive(true);
+        ChinWindow.gameObject.SetActive(true);
+        MouthWindow.gameObject.SetActive(true);
+        EyesWindow.gameObject.SetActive(true);
+    }
+                //random
+    public void Deactivate()
+    {
+        BodyWindow.gameObject.SetActive(false);
+        HeadWindow.gameObject.SetActive(false);
+        NoseWindow.gameObject.SetActive(false);
+        EarWindow.gameObject.SetActive(false);
+        ChinWindow.gameObject.SetActive(false);
+        MouthWindow.gameObject.SetActive(false);
+        EyesWindow.gameObject.SetActive(false);
     }
 }
