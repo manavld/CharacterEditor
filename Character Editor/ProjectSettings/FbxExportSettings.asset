@@ -10,7 +10,7 @@
         "BakeAnimation": false,
         "showConvertToPrefabDialog": true,
         "integrationSavePath": "C:\\Users\\Manav\\Documents\\GitHub\\CharacterEditor\\Character Editor",
-        "selectedDCCApp": 0,
+        "selectedDCCApp": 1,
         "prefabSavePaths": [
             "."
         ],
@@ -29,7 +29,7 @@
             "C:/Program Files/Autodesk/Maya2019/bin/maya.exe"
         ],
         "exportModelSettingsSerialize": {
-            "exportFormat": 1,
+            "exportFormat": 0,
             "animatedSkinnedMesh": true,
             "mayaCompatibleNaming": true,
             "include": 2,
@@ -40,7 +40,7 @@
         },
         "convertToPrefabSettingsSerialize": {
             "exportFormat": 0,
-            "animatedSkinnedMesh": false,
+            "animatedSkinnedMesh": true,
             "mayaCompatibleNaming": true
         }
     }

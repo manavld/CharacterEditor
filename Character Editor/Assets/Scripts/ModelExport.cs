@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 //using UnityEditor.Formats.Fbx.Exporter;
+//using Autodesk.Fbx;
+//using FE = UnityFBXExporter.FBXExporter;
+using UnityFBXExporter;
 
 public class ModelExport : MonoBehaviour
 {
@@ -20,7 +23,12 @@ public class ModelExport : MonoBehaviour
 
     public void OnClickEXPORT()
     {
+
+        FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", false, true);
+        
         //ModelExporter.ExportObject(Application.dataPath + "ExportedModel.fbx", model);
+
+        
 
         /*
         using (FbxManager fbxManager = FbxManager.Create())
@@ -43,5 +51,6 @@ public class ModelExport : MonoBehaviour
             }
         }
         */
+        
     }
 }
