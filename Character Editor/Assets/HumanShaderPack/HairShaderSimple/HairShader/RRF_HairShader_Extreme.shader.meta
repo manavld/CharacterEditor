@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: af85a420cdfb27042bf865be64bc04b4
+timeCreated: 1525190315
+licenseType: Store
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _AlphaClip: {fileID: 2800000, guid: 9a79aa322f67842448907ade5c0439ed, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

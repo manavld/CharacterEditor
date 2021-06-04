@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 657852846110fc54e8086c5d16d68761
+timeCreated: 1538310427
+licenseType: Store
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _CutoutTipGrad1TipGrad2: {fileID: 2800000, guid: db53956d7bc64a542926b4d2aa7b036b,
+      type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

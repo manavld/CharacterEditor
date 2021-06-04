@@ -1,0 +1,6 @@
+Olander's Genesis Hair Shader
+
+Version: 1.0
+- Initial Release
+- Works in all Unity 5 versions. 
+- Submitted using v5.1.2 for most compatability

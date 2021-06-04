@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BackComb
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Beard1
+  m_Shader: {fileID: 4800000, guid: 29d8963b0e55f284ebbc1d08be7d254b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaClip:
+        m_Texture: {fileID: 2800000, guid: ac3bb04d0d6494a45a5876821733f97c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -39,8 +43,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _HairToneVariation:
+        m_Texture: {fileID: 2800000, guid: 45fc7bad4b8f246408ac1ad4b9a37950, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HairsNormal:
+        m_Texture: {fileID: 2800000, guid: d4333b3b5f4fbea4ca3bca7a8410a05f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e6319ba5511ca2c41867c1c33466e557, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -60,19 +72,30 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _FastSlow: 150
     - _GlossMapScale: 1
-    - _Glossiness: 0.107
+    - _Gloss_Variation: 0.5
+    - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HairSpecCol_Mixing: 1.25
     - _Metallic: 0
     - _Mode: 0
+    - _MotionAmount: 0.01
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _TipAmount: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - _BaseColorGloss: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _NormalShift: {r: 0, g: 0.5, b: 0, a: 0}
+    - _ShineColor_ToneBoost: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _ShineColor_ToneBost: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TipColor_Mix: {r: 0, g: 0, b: 0, a: 1}
+    - _Tip_Color: {r: 0.1172414, g: 1, b: 0, a: 0.5}
   m_BuildTextureStacks: []

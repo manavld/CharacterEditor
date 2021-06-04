@@ -1,0 +1,19 @@
+Created with ShaderForge (may no longer recieve updated support, shaders are effectively being re-written using Amplify shader Editor)
+Please see Hair Shader 2 on the Unity Asset Store.
+
+March 28th, 2019:
+This asset will no longer recieve updates.
+Final Update, Shaders have been refined and optimised for mobile use, for better hair, please upgrade to Hair Shader 2
+
+
+OptiTranslucent Shader.
+
+This shader makes use of Fresnel and Emissive Values to simulate Translucency.
+It will use existing light sources for influence.
+
+You can adjust the Tanslucent Effect by means of a slide.
+
+Please Check out the RRF_HairShader_Scene and the
+Object HairShaderOptiTranlucent Example and its materials.
+
+Shaders for HairShader Simple can be found in the 'Custom' section of shaders.
