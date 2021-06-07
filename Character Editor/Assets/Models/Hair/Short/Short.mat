@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Short
   m_Shader: {fileID: 4800000, guid: 3e40508dba3f0094192305951c10aa1a, type: 3}
-  m_ShaderKeywords: _METALLICGLOSSMAP
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,8 +19,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaClip:
+        m_Texture: {fileID: 2800000, guid: 9a79aa322f67842448907ade5c0439ed, type: 3}
+        m_Scale: {x: 2.14, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 4095d52031693c34593780e74f81ebb2, type: 3}
+        m_Texture: {fileID: 2800000, guid: c7429d43e1628fb45b613870453d8c50, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -43,12 +47,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _HairToneVariation:
+        m_Texture: {fileID: 2800000, guid: e2e84d3fa8b28c643b88bca5c78bf7cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HairsNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4095d52031693c34593780e74f81ebb2, type: 3}
-        m_Scale: {x: 14.63, y: 1}
+        m_Texture: {fileID: 2800000, guid: 4ce59c172ecbe3143a7143467cc3d6ae, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 478e2aaf8c1b6ac4d92d87cbffa0bb2d, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -69,31 +81,34 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cutoff: 0.172
+    - _Cutoff: 0.179
     - _DetailNormalMapScale: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _GlossMapScale: 0
+    - _Gloss_Variation: 0.5
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _HairSpecCol_Mixing: 1.25
     - _Metallic: 0
-    - _Mode: 0
+    - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Richness: 0.41
-    - _ShadowStrength: 1
-    - _Shininess: 0.081
-    - _SmoothnessTextureChannel: 0
+    - _Richness: 1
+    - _Shininess: 0.01
+    - _SmoothnessTextureChannel: 1
     - _SpecularHighlights: 1
     - _SquashAmount: 1
     - _SrcBlend: 1
-    - _TranslucencyViewDependency: 0.7
     - _UVSec: 0
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColorGloss: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HairTint: {r: 0.050943315, g: 1, b: 0.16065641, a: 1}
-    - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.41, a: 1}
+    - _HairTint: {r: 1, g: 1, b: 1, a: 1}
+    - _NormalShift: {r: 0, g: 0.5, b: 0, a: 0}
+    - _ShineColor_ToneBoost: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TipColor_Mix: {r: 0, g: 0, b: 0, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
