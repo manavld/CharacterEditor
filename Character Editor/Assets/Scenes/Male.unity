@@ -11031,7 +11031,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 11.536, y: -10.861, z: 17.257}
 --- !u!1 &708600678
 GameObject:
@@ -20407,7 +20407,7 @@ Transform:
   m_LocalScale: {x: 99.54235, y: 99.54235, z: 99.54235}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 157.905, z: -90}
 --- !u!1 &1353449670
 GameObject:
@@ -22015,9 +22015,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
-        m_MethodName: SliderValueUpdate
+      - m_Target: {fileID: 729915373}
+        m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
+        m_MethodName: EctomorphSlider
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22027,8 +22027,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 729915373}
-        m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
+      - m_Target: {fileID: 1649205227410165487}
+        m_TargetAssemblyTypeName: ClothingBlendshapesMale, Assembly-CSharp
         m_MethodName: EctomorphSlider
         m_Mode: 0
         m_Arguments:
@@ -24315,9 +24315,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SliderValue, Assembly-CSharp
-        m_MethodName: SliderValueUpdate
+      - m_Target: {fileID: 729915373}
+        m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
+        m_MethodName: EndomorphSlider
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24327,8 +24327,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 729915373}
-        m_TargetAssemblyTypeName: BlendshapesOther, Assembly-CSharp
+      - m_Target: {fileID: 1649205227410165487}
+        m_TargetAssemblyTypeName: ClothingBlendshapesMale, Assembly-CSharp
         m_MethodName: EndomorphSlider
         m_Mode: 0
         m_Arguments:
@@ -27740,7 +27740,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888506830
 GameObject:
@@ -27832,7 +27832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1893801938
 GameObject:
@@ -28175,7 +28175,7 @@ RectTransform:
   - {fileID: 1408506768}
   - {fileID: 536743746}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31672,8 +31672,10 @@ Transform:
   m_Children:
   - {fileID: 4167280742469750568}
   - {fileID: 6653773447544714536}
+  - {fileID: 2137230453083493460}
+  - {fileID: 7917558406341299348}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 165, z: 0}
 --- !u!1 &635547660776415610
 GameObject:
@@ -31973,6 +31975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2137230453083493460}
+  - component: {fileID: 1649205227410165487}
   m_Layer: 0
   m_Name: M_Clothing
   m_TagString: Untagged
@@ -31980,6 +31983,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1649205227410165487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649205227410165486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd931a484aa54843a92ff70edd3e90e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Jacket: {fileID: 8130447709068261039}
+  Shirt: {fileID: 9196259838818379202}
+  TankTop: {fileID: 3065319455984543204}
+  TShirt: {fileID: 3660886284982595930}
+  Shorts: {fileID: 7792334597783631733}
+  Jeans: {fileID: 227198495348901666}
+  Joggers: {fileID: 8396042779984708937}
 --- !u!23 &1725441100245577198
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32141,9 +32163,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649205227410165486}
-  m_LocalRotation: {x: 0, y: 0.9914449, z: 0, w: 0.13052626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 54.99385, y: 54.99385, z: 54.99385}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1398883526253846989}
   - {fileID: 5347246626982028701}
@@ -32155,8 +32177,8 @@ Transform:
   - {fileID: 5370929466483313898}
   - {fileID: 5544305229635846190}
   - {fileID: 2429157448122158687}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 543450652477399801}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 165, z: 0}
 --- !u!137 &2251124490716485349
 SkinnedMeshRenderer:
@@ -33290,9 +33312,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7398008768989091374}
-  m_LocalRotation: {x: 0, y: 0.9914449, z: 0, w: 0.13052626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 54.99385, y: 54.99385, z: 54.99385}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6813791808998925899}
   - {fileID: 3390988690102769225}
@@ -33302,8 +33324,8 @@ Transform:
   - {fileID: 4402489186228752371}
   - {fileID: 3615036224375719064}
   - {fileID: 2339076518628960482}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 543450652477399801}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 165, z: 0}
 --- !u!1 &8130447709068261039
 GameObject:
