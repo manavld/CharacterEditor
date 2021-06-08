@@ -27,6 +27,16 @@ public class FeaturesSelection : MonoBehaviour
     public static GameObject MouthWindow;
     public static GameObject EyesWindow;
 
+    //Part2
+    public Button Hair, EyeColor, SkinTone, TopClothing, BottomClothing, Shoes;
+
+    public GameObject HairWindow, EyeColorWindow, SkinToneWindow, TopClothingWindow, BottomClothingWindow, ShoesWindow;
+
+    public Button RandomizePart2, NextToExport, BackToPart1;
+
+    public GameObject Part2Title;
+    
+
     private void Awake()
     {
         BodyWindow = canvas.transform.Find("BodyTypesWindow").gameObject;
@@ -36,6 +46,14 @@ public class FeaturesSelection : MonoBehaviour
         ChinWindow = canvas.transform.Find("ChinWindow").gameObject;
         MouthWindow = canvas.transform.Find("MouthWindow").gameObject;
         EyesWindow = canvas.transform.Find("EyesWindow").gameObject;
+        /*
+        HairWindow = canvas.transform.Find("HairWindow").gameObject;
+        EyeColorWindow = canvas.transform.Find("EyeColorWindow").gameObject;
+        SkinToneWindow = canvas.transform.Find("SkinToneWindow").gameObject;
+        TopClothingWindow = canvas.transform.Find("TopClothingWindow").gameObject;
+        BottomClothingWindow = canvas.transform.Find("BottomClothingWindow").gameObject;
+        ShoesWindow = canvas.transform.Find("ShoesWindow").gameObject;
+        */
     }
 
     private void Start()
@@ -49,7 +67,7 @@ public class FeaturesSelection : MonoBehaviour
         MouthWindow = canvas.transform.Find("MouthWindow").gameObject;
         EyesWindow = canvas.transform.Find("EyesWindow").gameObject;
         */
-        
+
         BodyWindow.gameObject.SetActive(false);
         HeadWindow.gameObject.SetActive(false);
         NoseWindow.gameObject.SetActive(false);
@@ -61,9 +79,6 @@ public class FeaturesSelection : MonoBehaviour
     }
 
     
-
-
-
     public void OnClickBODY()
     {
         Body.gameObject.SetActive(false);
@@ -179,6 +194,16 @@ public class FeaturesSelection : MonoBehaviour
         MouthWindow.gameObject.SetActive(false);
         EyesWindow.gameObject.SetActive(false);
         Export.gameObject.SetActive(false);
+        Part2Title.gameObject.SetActive(false);
+        Hair.gameObject.SetActive(false);
+        EyeColor.gameObject.SetActive(false);
+        SkinTone.gameObject.SetActive(false);
+        TopClothing.gameObject.SetActive(false);
+        BottomClothing.gameObject.SetActive(false);
+        Shoes.gameObject.SetActive(false);
+        RandomizePart2.gameObject.SetActive(false);
+        NextToExport.gameObject.SetActive(false);
+        BackToPart1.gameObject.SetActive(false);
 
         Body.gameObject.SetActive(true);
         Head.gameObject.SetActive(true);
@@ -192,7 +217,7 @@ public class FeaturesSelection : MonoBehaviour
 
     }
 
-    public void GoToExport()
+    public void SelectionPart2()
     {
         Body.gameObject.SetActive(false);
         Head.gameObject.SetActive(false);
@@ -203,7 +228,130 @@ public class FeaturesSelection : MonoBehaviour
         Eyes.gameObject.SetActive(false);
         Randomize.gameObject.SetActive(false);
         Next.gameObject.SetActive(false);
+        Export.gameObject.SetActive(false);
+        HairWindow.gameObject.SetActive(false);
+        EyeColorWindow.gameObject.SetActive(false);
+        SkinToneWindow.gameObject.SetActive(false);
+        TopClothingWindow.gameObject.SetActive(false);
+        BottomClothingWindow.gameObject.SetActive(false);
+        ShoesWindow.gameObject.SetActive(false);
+
+        Part2Title.gameObject.SetActive(true);
+        Hair.gameObject.SetActive(true);
+        EyeColor.gameObject.SetActive(true);
+        SkinTone.gameObject.SetActive(true);
+        TopClothing.gameObject.SetActive(true);
+        BottomClothing.gameObject.SetActive(true);
+        Shoes.gameObject.SetActive(true);
+        RandomizePart2.gameObject.SetActive(true);
+        NextToExport.gameObject.SetActive(true);
+        BackToPart1.gameObject.SetActive(true);
+    }
+
+    public void OnClickHair()
+    {
+        Hair.gameObject.SetActive(false);
+        EyeColor.gameObject.SetActive(false);
+        SkinTone.gameObject.SetActive(false);
+        TopClothing.gameObject.SetActive(false);
+        BottomClothing.gameObject.SetActive(false);
+        Shoes.gameObject.SetActive(false);
+        RandomizePart2.gameObject.SetActive(false);
+        NextToExport.gameObject.SetActive(false);
+        BackToPart1.gameObject.SetActive(false);
+
+        HairWindow.gameObject.SetActive(true);
+    }
+
+    public void OnClickEyeColor()
+    {
+        Hair.gameObject.SetActive(false);
+        EyeColor.gameObject.SetActive(false);
+        SkinTone.gameObject.SetActive(false);
+        TopClothing.gameObject.SetActive(false);
+        BottomClothing.gameObject.SetActive(false);
+        Shoes.gameObject.SetActive(false);
+        RandomizePart2.gameObject.SetActive(false);
+        NextToExport.gameObject.SetActive(false);
+        BackToPart1.gameObject.SetActive(false);
+
+        EyeColorWindow.gameObject.SetActive(true);
+    }
+
+    public void OnClickSkinTone()
+    {
+        Hair.gameObject.SetActive(false);
+        EyeColor.gameObject.SetActive(false);
+        SkinTone.gameObject.SetActive(false);
+        TopClothing.gameObject.SetActive(false);
+        BottomClothing.gameObject.SetActive(false);
+        Shoes.gameObject.SetActive(false);
+        RandomizePart2.gameObject.SetActive(false);
+        NextToExport.gameObject.SetActive(false);
+        BackToPart1.gameObject.SetActive(false);
+
+        SkinToneWindow.gameObject.SetActive(true);
+    }
+
+    public void OnClickTopClothing()
+    {
+        Hair.gameObject.SetActive(false);
+        EyeColor.gameObject.SetActive(false);
+        SkinTone.gameObject.SetActive(false);
+        TopClothing.gameObject.SetActive(false);
+        BottomClothing.gameObject.SetActive(false);
+        Shoes.gameObject.SetActive(false);
+        RandomizePart2.gameObject.SetActive(false);
+        NextToExport.gameObject.SetActive(false);
+        BackToPart1.gameObject.SetActive(false);
+
+        TopClothingWindow.gameObject.SetActive(true);
+    }
+
+    public void OnClickBottomClothing()
+    {
+        Hair.gameObject.SetActive(false);
+        EyeColor.gameObject.SetActive(false);
+        SkinTone.gameObject.SetActive(false);
+        TopClothing.gameObject.SetActive(false);
+        BottomClothing.gameObject.SetActive(false);
+        Shoes.gameObject.SetActive(false);
+        RandomizePart2.gameObject.SetActive(false);
+        NextToExport.gameObject.SetActive(false);
+        BackToPart1.gameObject.SetActive(false);
+
+        BottomClothingWindow.gameObject.SetActive(true);
+    }
+
+    public void OnClickShoes()
+    {
+        Hair.gameObject.SetActive(false);
+        EyeColor.gameObject.SetActive(false);
+        SkinTone.gameObject.SetActive(false);
+        TopClothing.gameObject.SetActive(false);
+        BottomClothing.gameObject.SetActive(false);
+        Shoes.gameObject.SetActive(false);
+        RandomizePart2.gameObject.SetActive(false);
+        NextToExport.gameObject.SetActive(false);
+        BackToPart1.gameObject.SetActive(false);
+
+        ShoesWindow.gameObject.SetActive(true);
+    }
+
+    public void GoToExport()
+    {
+        Hair.gameObject.SetActive(false);
+        EyeColor.gameObject.SetActive(false);
+        SkinTone.gameObject.SetActive(false);
+        TopClothing.gameObject.SetActive(false);
+        BottomClothing.gameObject.SetActive(false);
+        Shoes.gameObject.SetActive(false);
+        RandomizePart2.gameObject.SetActive(false);
+        NextToExport.gameObject.SetActive(false);
+        BackToPart1.gameObject.SetActive(false);
+        Part2Title.gameObject.SetActive(false);
 
         Export.gameObject.SetActive(true);
     }
+
 }
