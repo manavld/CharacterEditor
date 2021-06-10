@@ -351,6 +351,7 @@ public class FeaturesSelection : MonoBehaviour
         BackToPart1.gameObject.SetActive(false);
         Part2Title.gameObject.SetActive(false);
 
+        Export.transform.Find("Information").gameObject.SetActive(false);
         Export.gameObject.SetActive(true);
     }
 

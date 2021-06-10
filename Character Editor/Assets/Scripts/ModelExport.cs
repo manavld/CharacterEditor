@@ -9,10 +9,11 @@ using UnityFBXExporter;
 public class ModelExport : MonoBehaviour
 {
     public GameObject model;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+   
     }
 
     // Update is called once per frame
@@ -23,12 +24,15 @@ public class ModelExport : MonoBehaviour
 
     public void OnClickEXPORT()
     {
-
+        //fbx
         FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", false, true);
-        
+
+        //info text
+        //this.gameObject.transform.Find("Information").gameObject.SetActive(true);
+
         //ModelExporter.ExportObject(Application.dataPath + "ExportedModel.fbx", model);
 
-        
+
 
         /*
         using (FbxManager fbxManager = FbxManager.Create())
@@ -51,6 +55,6 @@ public class ModelExport : MonoBehaviour
             }
         }
         */
-        
+
     }
 }
