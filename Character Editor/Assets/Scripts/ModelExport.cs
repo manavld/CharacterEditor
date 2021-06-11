@@ -9,7 +9,8 @@ using UnityFBXExporter;
 public class ModelExport : MonoBehaviour
 {
     public GameObject model;
-    
+    public GameObject export;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,7 @@ public class ModelExport : MonoBehaviour
         FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", false, true);
 
         //info text
-        //this.gameObject.transform.Find("Information").gameObject.SetActive(true);
+        export.transform.Find("Information").gameObject.SetActive(true);
 
         //ModelExporter.ExportObject(Application.dataPath + "ExportedModel.fbx", model);
 

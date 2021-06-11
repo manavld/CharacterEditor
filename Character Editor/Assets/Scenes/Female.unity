@@ -289,7 +289,7 @@ RectTransform:
   m_Children:
   - {fileID: 320617905}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1122,7 +1122,7 @@ RectTransform:
   - {fileID: 1939758488}
   - {fileID: 1079181798}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2078,7 +2078,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 67141814}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897580477}
+        m_TargetAssemblyTypeName: MultipleMeshFemale, Assembly-CSharp
+        m_MethodName: HairNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &67141814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4270,7 +4282,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 167955307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897580477}
+        m_TargetAssemblyTypeName: MultipleMeshFemale, Assembly-CSharp
+        m_MethodName: BottomClothesPrev
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &167955307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6358,7 +6382,7 @@ RectTransform:
   m_Children:
   - {fileID: 104889251}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8632,7 +8656,7 @@ RectTransform:
   m_Children:
   - {fileID: 1777650482}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11354,6 +11378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: {fileID: 919132149546165519}
+  export: {fileID: 1660531945}
 --- !u!1 &503545470
 GameObject:
   m_ObjectHideFlags: 0
@@ -11558,7 +11583,7 @@ RectTransform:
   m_Children:
   - {fileID: 922817886}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13055,7 +13080,7 @@ RectTransform:
   - {fileID: 971655833}
   - {fileID: 193134380}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15901,7 +15926,7 @@ RectTransform:
   m_LocalScale: {x: 2.1857998, y: 2.1857998, z: 2.1857998}
   m_Children: []
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17060,7 +17085,7 @@ RectTransform:
   - {fileID: 1034203633}
   - {fileID: 794893660}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19017,6 +19042,62 @@ RectTransform:
   m_AnchoredPosition: {x: 580, y: -236.81}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &897580475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897580476}
+  - component: {fileID: 897580477}
+  m_Layer: 5
+  m_Name: MultipleMeshController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &897580476
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897580475}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1343173414}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &897580477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897580475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4305bd3f021259740b068f9510212b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clothing: {fileID: 7148434689015761129}
+  Hair: {fileID: 4508816302094266825}
+  HairWindow: {fileID: 1469759310}
+  EyeWindow: {fileID: 2005844165}
+  SkinWindow: {fileID: 775132886}
+  TopWindow: {fileID: 598801035}
+  BottomWindow: {fileID: 1476731414}
+  ShoesWindow: {fileID: 26364552}
 --- !u!1 &904942193
 GameObject:
   m_ObjectHideFlags: 0
@@ -25174,7 +25255,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1153755497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897580477}
+        m_TargetAssemblyTypeName: MultipleMeshFemale, Assembly-CSharp
+        m_MethodName: HairPrev
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1153755497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25530,7 +25623,7 @@ RectTransform:
   - {fileID: 323288418}
   - {fileID: 1815249808}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28254,7 +28347,7 @@ RectTransform:
   m_Children:
   - {fileID: 187273447}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28737,6 +28830,7 @@ RectTransform:
   - {fileID: 144618541}
   - {fileID: 151490821}
   - {fileID: 476515442}
+  - {fileID: 897580476}
   - {fileID: 713228831}
   - {fileID: 2065646918}
   - {fileID: 1878781403}
@@ -29452,7 +29546,7 @@ RectTransform:
   m_Children:
   - {fileID: 215053509}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29767,7 +29861,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1395110365}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897580477}
+        m_TargetAssemblyTypeName: MultipleMeshFemale, Assembly-CSharp
+        m_MethodName: ShoesNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1395110365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31403,7 +31509,7 @@ RectTransform:
   - {fileID: 444347263}
   - {fileID: 1839258936}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31565,7 +31671,7 @@ RectTransform:
   - {fileID: 707425526}
   - {fileID: 433237647}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -32210,7 +32316,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1487445546}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897580477}
+        m_TargetAssemblyTypeName: MultipleMeshFemale, Assembly-CSharp
+        m_MethodName: ShoesPrev
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1487445546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34076,7 +34194,7 @@ RectTransform:
   m_Children:
   - {fileID: 107240998}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35170,7 +35288,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1656969923}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897580477}
+        m_TargetAssemblyTypeName: MultipleMeshFemale, Assembly-CSharp
+        m_MethodName: TopClothesPrev
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1656969923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35588,7 +35718,7 @@ RectTransform:
   - {fileID: 2053128086}
   - {fileID: 1917612516}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -40809,7 +40939,7 @@ RectTransform:
   m_Children:
   - {fileID: 139076681}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -42056,7 +42186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1917612516
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42100,8 +42230,8 @@ MonoBehaviour:
 
 
     It can be found in the application
-    file as "Character Editor_DataEXPORTED_MODEL" as an .fbx and with all the textures
-    in the same location.
+    file as "Character Editor_DataEXPORTED_MODEL" as an .fbx and all the textures
+    are in the same location.
 
 
     Feel free to integrate it in Mixamo for an automatic
@@ -43700,7 +43830,7 @@ RectTransform:
   - {fileID: 905191321}
   - {fileID: 544644591}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -44280,7 +44410,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2043946876}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897580477}
+        m_TargetAssemblyTypeName: MultipleMeshFemale, Assembly-CSharp
+        m_MethodName: BottomClothesNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2043946876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44905,7 +45047,7 @@ RectTransform:
   m_Children:
   - {fileID: 1146581572}
   m_Father: {fileID: 1343173414}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -45527,7 +45669,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2099035839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897580477}
+        m_TargetAssemblyTypeName: MultipleMeshFemale, Assembly-CSharp
+        m_MethodName: TopClothesNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2099035839
 MonoBehaviour:
   m_ObjectHideFlags: 0
