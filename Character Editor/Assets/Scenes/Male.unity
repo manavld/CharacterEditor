@@ -1998,7 +1998,7 @@ RectTransform:
   m_Children:
   - {fileID: 895437219}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2631,7 +2631,7 @@ RectTransform:
   m_Children:
   - {fileID: 658598473}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2899,7 +2899,7 @@ GameObject:
   - component: {fileID: 101601804}
   - component: {fileID: 101601803}
   m_Layer: 5
-  m_Name: 'BottomClothesLBlue '
+  m_Name: BottomClothesLBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2966,7 +2966,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 101601804}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomLBlueT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &101601804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4945,7 +4957,7 @@ RectTransform:
   m_Children:
   - {fileID: 1116326846}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8604,7 +8616,7 @@ RectTransform:
   m_Children:
   - {fileID: 1603029852}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9667,7 +9679,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 374753616}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesGreyT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &374753616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11090,7 +11114,7 @@ RectTransform:
   m_LocalScale: {x: 2.1858, y: 2.1858, z: 2.1858}
   m_Children: []
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11349,7 +11373,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 463902054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomWhiteT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &463902054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11710,7 +11746,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 491718550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesBrownT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &491718550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13485,7 +13533,7 @@ RectTransform:
   m_Children:
   - {fileID: 644743315}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18007,7 +18055,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 748743985}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesBlackT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &748743985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18638,7 +18698,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 784175930}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomCamoT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &784175930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18832,7 +18904,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 800934519}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomGreyT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &800934519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19141,7 +19225,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 812462969}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesDBlueT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &812462969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24063,7 +24159,7 @@ RectTransform:
   - {fileID: 894501556}
   - {fileID: 117888312}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25322,7 +25418,7 @@ RectTransform:
   m_Children:
   - {fileID: 894632914}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26833,7 +26929,7 @@ RectTransform:
   m_Children:
   - {fileID: 1487422564}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27451,7 +27547,7 @@ RectTransform:
   - {fileID: 111825849}
   - {fileID: 460553867}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27649,7 +27745,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1155079419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesRedT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1155079419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28410,7 +28518,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 24
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28885,7 +28993,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1230284116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesWhiteT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1230284116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31253,7 +31373,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1318737936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesPinkT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1318737936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37961,7 +38093,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1659179728}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomDBlueT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1659179728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38080,7 +38224,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1659601447}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomBlackT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1659601447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38469,7 +38625,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1672236802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomBrownT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1672236802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39247,7 +39415,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1714745239}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesLBlueT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1714745239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41729,7 +41909,7 @@ RectTransform:
   - {fileID: 1916377026}
   - {fileID: 99678065}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -41950,7 +42130,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1821199888}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: ShoesDBrownT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1821199888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43685,7 +43877,6 @@ RectTransform:
   - {fileID: 43642392}
   - {fileID: 304274240}
   - {fileID: 1097208426}
-  - {fileID: 1187258619}
   - {fileID: 461611466}
   - {fileID: 1054788721}
   - {fileID: 82675062}
@@ -43698,6 +43889,7 @@ RectTransform:
   - {fileID: 998791460}
   - {fileID: 1961044121}
   - {fileID: 1815517801}
+  - {fileID: 1187258619}
   - {fileID: 68254165}
   - {fileID: 1233514486}
   - {fileID: 557206726}
@@ -45404,7 +45596,7 @@ RectTransform:
   - {fileID: 106162681}
   - {fileID: 1852914309}
   m_Father: {fileID: 1908376871}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -46688,7 +46880,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2026731625}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomPinkT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2026731625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48699,7 +48903,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2134213963}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1187258620}
+        m_TargetAssemblyTypeName: MultipleMeshMale, Assembly-CSharp
+        m_MethodName: BottomRedT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2134213963
 MonoBehaviour:
   m_ObjectHideFlags: 0

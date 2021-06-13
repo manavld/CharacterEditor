@@ -27,9 +27,11 @@ public class MultipleMeshMale : MonoBehaviour
 
     //BottomClothing Window
     private GameObject BottomClothesCurrent;
+    private GameObject BottomBlack, BottomWhite, BottomLBlue, BottomRed, BottomGrey, BottomPink, BottomDBlue, BottomBrown, BottomCamo;
 
     //Shoes Window
     private GameObject ShoesCurrent;
+    private GameObject ShoesBlack, ShoesWhite, ShoesLBlue, ShoesRed, ShoesGrey, ShoesPink, ShoesDBlue, ShoesBrown, ShoesDBrown;
 
 
     //Textures---------
@@ -54,6 +56,17 @@ public class MultipleMeshMale : MonoBehaviour
     private Texture TanktopDBlueT, TanktopBlackT, TanktopWhiteT, TanktopLBlueT, TanktopRedT, TanktopPinkT, TanktopGreenT;
     private Texture ShirtWhiteT, ShirtBlackT, ShirtDBlueT, ShirtRedT, ShirtGreyT, ShirtGreenT, ShirtPinkT, ShirtLBlueT;
     private Texture JacketBrownT, JacketBlackT, JacketWhiteT, JacketDBlueT, JacketRedT, JacketGreyT;
+
+    //BottomClothing
+    private Texture JeansLBlueT, JeansBlackT, JeansWhiteT, JeansBrownT, JeansCamoT, JeansGreyT, JeansDBlueT, JeansPinkT;
+    private Texture ShortsLBlueT, ShortsBlackT, ShortsWhiteT, ShortsRedT, ShortsDBlueT, ShortsGreyT, ShortsCamoT;
+    private Texture JoggersGreyT, JoggersBlackT, JoggersWhiteT, JoggersDBlueT, JoggersRedT, JoggersPinkT, JoggersCamoT, JoggersBrownT;
+
+    //Shoes
+    private Texture ConverseGreyT, ConverseBlackT, ConverseWhiteT, ConverseLBlueT, ConverseRedT, ConversePinkT, ConverseDBlueT;
+    private Texture DCDBrownT, DCWhiteT, DCBlackT, DCRedT, DCDBlueT, DCGreyT, DCLBlueT, DCPinkT;
+    private Texture FormalDBrownT, FormalBlackT, FormalGreyT, FormalDBlueT, FormalBrownT;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,6 +112,16 @@ public class MultipleMeshMale : MonoBehaviour
         //BottomClothing Window
         BottomClothesCurrent = BottomWindow.transform.Find("BottomClothesCurrent").gameObject;
 
+        BottomBlack = BottomWindow.transform.Find("BottomClothesBlack").gameObject;
+        BottomWhite = BottomWindow.transform.Find("BottomClothesWhite").gameObject;
+        BottomLBlue = BottomWindow.transform.Find("BottomClothesLBlue").gameObject;
+        BottomRed = BottomWindow.transform.Find("BottomClothesRed").gameObject;
+        BottomGrey = BottomWindow.transform.Find("BottomClothesGrey").gameObject;
+        BottomPink = BottomWindow.transform.Find("BottomClothesPink").gameObject;
+        BottomDBlue = BottomWindow.transform.Find("BottomClothesDBlue").gameObject;
+        BottomBrown = BottomWindow.transform.Find("BottomClothesBrown").gameObject;
+        BottomCamo = BottomWindow.transform.Find("BottomClothesCamo").gameObject;
+
         //Shoes Meshes
         Converse = Clothing.transform.Find("M_ShoesConverse").gameObject;
         DC = Clothing.transform.Find("M_ShoesDC").gameObject;
@@ -106,6 +129,16 @@ public class MultipleMeshMale : MonoBehaviour
 
         //Shoes Window
         ShoesCurrent = ShoesWindow.transform.Find("ShoesCurrent").gameObject;
+
+        ShoesBlack = ShoesWindow.transform.Find("ShoesBlack").gameObject;
+        ShoesWhite = ShoesWindow.transform.Find("ShoesWhite").gameObject;
+        ShoesLBlue = ShoesWindow.transform.Find("ShoesLBlue").gameObject;
+        ShoesRed = ShoesWindow.transform.Find("ShoesRed").gameObject;
+        ShoesGrey = ShoesWindow.transform.Find("ShoesGrey").gameObject;
+        ShoesPink = ShoesWindow.transform.Find("ShoesPink").gameObject;
+        ShoesDBlue = ShoesWindow.transform.Find("ShoesDBlue").gameObject;
+        ShoesBrown = ShoesWindow.transform.Find("ShoesBrown").gameObject;
+        ShoesDBrown = ShoesWindow.transform.Find("ShoesDBrown").gameObject;
 
 
         //Textures
@@ -193,6 +226,57 @@ public class MultipleMeshMale : MonoBehaviour
         TanktopRedT = Resources.Load("Clothing/TankTop/TankTop_Color5") as Texture2D;
         TanktopPinkT = Resources.Load("Clothing/TankTop/TankTop_Color6") as Texture2D;
         TanktopGreenT = Resources.Load("Clothing/TankTop/TankTop_Color7") as Texture2D;
+
+        //Jeans
+        JeansLBlueT = Resources.Load("Clothing/Jeans/Jeans_Color1") as Texture2D;
+        JeansBlackT = Resources.Load("Clothing/Jeans/Jeans_Color2") as Texture2D;
+        JeansWhiteT = Resources.Load("Clothing/Jeans/Jeans_Color3") as Texture2D;
+        JeansGreyT = Resources.Load("Clothing/Jeans/Jeans_Color4") as Texture2D;
+        JeansDBlueT = Resources.Load("Clothing/Jeans/Jeans_Color5") as Texture2D;
+        JeansPinkT = Resources.Load("Clothing/Jeans/Jeans_Color6") as Texture2D;
+        JeansBrownT = Resources.Load("Clothing/Jeans/Jeans_Color7") as Texture2D;
+        JeansCamoT = Resources.Load("Clothing/Jeans/Jeans_Color8") as Texture2D;
+        //Shorts
+        ShortsLBlueT = Resources.Load("Clothing/Shorts/Shorts_Color1") as Texture2D;
+        ShortsBlackT = Resources.Load("Clothing/Shorts/Shorts_Color2") as Texture2D;
+        ShortsWhiteT = Resources.Load("Clothing/Shorts/Shorts_Color3") as Texture2D;
+        ShortsRedT = Resources.Load("Clothing/Shorts/Shorts_Color4") as Texture2D;
+        ShortsDBlueT = Resources.Load("Clothing/Shorts/Shorts_Color5") as Texture2D;
+        ShortsGreyT = Resources.Load("Clothing/Shorts/Shorts_Color6") as Texture2D;
+        ShortsCamoT = Resources.Load("Clothing/Shorts/Shorts_Color7") as Texture2D;
+        //Joggers
+        JoggersGreyT = Resources.Load("Clothing/Joggers/Joggers_Color1") as Texture2D;
+        JoggersBlackT = Resources.Load("Clothing/Joggers/Joggers_Color2") as Texture2D;
+        JoggersWhiteT = Resources.Load("Clothing/Joggers/Joggers_Color3") as Texture2D;
+        JoggersDBlueT = Resources.Load("Clothing/Joggers/Joggers_Color4") as Texture2D;
+        JoggersRedT = Resources.Load("Clothing/Joggers/Joggers_Color5") as Texture2D;
+        JoggersPinkT = Resources.Load("Clothing/Joggers/Joggers_Color6") as Texture2D;
+        JoggersCamoT = Resources.Load("Clothing/Joggers/Joggers_Color7") as Texture2D;
+        JoggersBrownT = Resources.Load("Clothing/Joggers/Joggers_Color8") as Texture2D;
+
+        //Converse
+        ConverseGreyT = Resources.Load("Clothing/ShoesConverse/ShoesConverse_Color1") as Texture2D;
+        ConverseBlackT = Resources.Load("Clothing/ShoesConverse/ShoesConverse_Color2") as Texture2D;
+        ConverseWhiteT = Resources.Load("Clothing/ShoesConverse/ShoesConverse_Color3") as Texture2D;
+        ConverseLBlueT = Resources.Load("Clothing/ShoesConverse/ShoesConverse_Color4") as Texture2D;
+        ConverseRedT = Resources.Load("Clothing/ShoesConverse/ShoesConverse_Color5") as Texture2D;
+        ConversePinkT = Resources.Load("Clothing/ShoesConverse/ShoesConverse_Color6") as Texture2D;
+        ConverseDBlueT = Resources.Load("Clothing/ShoesConverse/ShoesConverse_Color7") as Texture2D;
+        //DC
+        DCDBrownT = Resources.Load("Clothing/ShoesDC/ShoesDC_Color1") as Texture2D;
+        DCWhiteT = Resources.Load("Clothing/ShoesDC/ShoesDC_Color2") as Texture2D;
+        DCBlackT = Resources.Load("Clothing/ShoesDC/ShoesDC_Color3") as Texture2D;
+        DCRedT = Resources.Load("Clothing/ShoesDC/ShoesDC_Color4") as Texture2D;
+        DCDBlueT = Resources.Load("Clothing/ShoesDC/ShoesDC_Color5") as Texture2D;
+        DCGreyT = Resources.Load("Clothing/ShoesDC/ShoesDC_Color6") as Texture2D;
+        DCLBlueT = Resources.Load("Clothing/ShoesDC/ShoesDC_Color7") as Texture2D;
+        DCPinkT = Resources.Load("Clothing/ShoesDC/ShoesDC_Color8") as Texture2D;
+        //Formal
+        FormalDBrownT = Resources.Load("Clothing/ShoesFormal/ShoesFromal_Color1") as Texture2D;
+        FormalBlackT = Resources.Load("Clothing/ShoesFormal/ShoesFromal_Color2") as Texture2D;
+        FormalGreyT = Resources.Load("Clothing/ShoesFormal/ShoesFromal_Color3") as Texture2D;
+        FormalDBlueT = Resources.Load("Clothing/ShoesFormal/ShoesFromal_Color4") as Texture2D;
+        FormalBrownT = Resources.Load("Clothing/ShoesFormal/ShoesFromal_Color5") as Texture2D;
 
 
     }
@@ -664,7 +748,15 @@ public class MultipleMeshMale : MonoBehaviour
                 //meshes
                 Jeans.SetActive(false);
                 //color options
-
+                BottomBlack.SetActive(true);
+                BottomWhite.SetActive(true);
+                BottomLBlue.SetActive(true);
+                BottomRed.SetActive(true);
+                BottomGrey.SetActive(true);
+                BottomPink.SetActive(true);
+                BottomDBlue.SetActive(true);
+                BottomBrown.SetActive(true);
+                BottomCamo.SetActive(true);
                 break;
             case 1:
                 //text
@@ -673,7 +765,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Jeans.SetActive(true);
                 Shorts.SetActive(false);
                 //color options
-
+                BottomBlack.SetActive(true);
+                BottomWhite.SetActive(true);
+                BottomLBlue.SetActive(true);
+                BottomRed.SetActive(false);
+                BottomGrey.SetActive(true);
+                BottomPink.SetActive(true);
+                BottomDBlue.SetActive(true);
+                BottomBrown.SetActive(true);
+                BottomCamo.SetActive(true);
                 break;
             case 2:
                 //text
@@ -683,7 +783,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Jeans.SetActive(false);
                 Joggers.SetActive(false);
                 //color options
-
+                BottomBlack.SetActive(true);
+                BottomWhite.SetActive(true);
+                BottomLBlue.SetActive(true);
+                BottomRed.SetActive(true);
+                BottomGrey.SetActive(true);
+                BottomPink.SetActive(false);
+                BottomDBlue.SetActive(true);
+                BottomBrown.SetActive(false);
+                BottomCamo.SetActive(true);
                 break;
             case 3:
                 //text
@@ -692,7 +800,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Joggers.SetActive(true);
                 Shorts.SetActive(false);
                 //color options
-
+                BottomBlack.SetActive(true);
+                BottomWhite.SetActive(true);
+                BottomLBlue.SetActive(false);
+                BottomRed.SetActive(true);
+                BottomGrey.SetActive(true);
+                BottomPink.SetActive(true);
+                BottomDBlue.SetActive(true);
+                BottomBrown.SetActive(true);
+                BottomCamo.SetActive(true);
                 break;
         }
 
@@ -712,7 +828,15 @@ public class MultipleMeshMale : MonoBehaviour
                 //meshes
                 Jeans.SetActive(false);
                 //color options
-
+                BottomBlack.SetActive(true);
+                BottomWhite.SetActive(true);
+                BottomLBlue.SetActive(true);
+                BottomRed.SetActive(true);
+                BottomGrey.SetActive(true);
+                BottomPink.SetActive(true);
+                BottomDBlue.SetActive(true);
+                BottomBrown.SetActive(true);
+                BottomCamo.SetActive(true);
                 break;
             case 1:
                 //text
@@ -721,7 +845,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Jeans.SetActive(true);
                 Shorts.SetActive(false);
                 //color options
-
+                BottomBlack.SetActive(true);
+                BottomWhite.SetActive(true);
+                BottomLBlue.SetActive(true);
+                BottomRed.SetActive(false);
+                BottomGrey.SetActive(true);
+                BottomPink.SetActive(true);
+                BottomDBlue.SetActive(true);
+                BottomBrown.SetActive(true);
+                BottomCamo.SetActive(true);
                 break;
             case 2:
                 //text
@@ -731,7 +863,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Jeans.SetActive(false);
                 Joggers.SetActive(false);
                 //color options
-
+                BottomBlack.SetActive(true);
+                BottomWhite.SetActive(true);
+                BottomLBlue.SetActive(true);
+                BottomRed.SetActive(true);
+                BottomGrey.SetActive(true);
+                BottomPink.SetActive(false);
+                BottomDBlue.SetActive(true);
+                BottomBrown.SetActive(false);
+                BottomCamo.SetActive(true);
                 break;
             case 3:
                 //text
@@ -740,7 +880,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Joggers.SetActive(true);
                 Shorts.SetActive(false);
                 //color options
-
+                BottomBlack.SetActive(true);
+                BottomWhite.SetActive(true);
+                BottomLBlue.SetActive(false);
+                BottomRed.SetActive(true);
+                BottomGrey.SetActive(true);
+                BottomPink.SetActive(true);
+                BottomDBlue.SetActive(true);
+                BottomBrown.SetActive(true);
+                BottomCamo.SetActive(true);
                 break;
         }
 
@@ -762,7 +910,15 @@ public class MultipleMeshMale : MonoBehaviour
                 //meshes
                 Converse.SetActive(false);
                 //color options
-
+                ShoesBlack.SetActive(true);
+                ShoesWhite.SetActive(true);
+                ShoesLBlue.SetActive(true);
+                ShoesRed.SetActive(true);
+                ShoesGrey.SetActive(true);
+                ShoesPink.SetActive(true);
+                ShoesDBlue.SetActive(true);
+                ShoesBrown.SetActive(true);
+                ShoesDBrown.SetActive(true);
                 break;
             case 1:
                 //text
@@ -771,7 +927,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Converse.SetActive(true);
                 DC.SetActive(false);
                 //color options
-
+                ShoesBlack.SetActive(true);
+                ShoesWhite.SetActive(true);
+                ShoesLBlue.SetActive(true);
+                ShoesRed.SetActive(true);
+                ShoesGrey.SetActive(true);
+                ShoesPink.SetActive(true);
+                ShoesDBlue.SetActive(true);
+                ShoesBrown.SetActive(false);
+                ShoesDBrown.SetActive(false);
                 break;
             case 2:
                 //text
@@ -781,7 +945,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Formal.SetActive(false);
                 Converse.SetActive(false);
                 //color options
-
+                ShoesBlack.SetActive(true);
+                ShoesWhite.SetActive(true);
+                ShoesLBlue.SetActive(true);
+                ShoesRed.SetActive(true);
+                ShoesGrey.SetActive(true);
+                ShoesPink.SetActive(true);
+                ShoesDBlue.SetActive(true);
+                ShoesBrown.SetActive(false);
+                ShoesDBrown.SetActive(true);
                 break;
             case 3:
                 //text
@@ -790,7 +962,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Formal.SetActive(true);
                 DC.SetActive(false);
                 //color options
-
+                ShoesBlack.SetActive(true);
+                ShoesWhite.SetActive(false);
+                ShoesLBlue.SetActive(false);
+                ShoesRed.SetActive(false);
+                ShoesGrey.SetActive(true);
+                ShoesPink.SetActive(false);
+                ShoesDBlue.SetActive(true);
+                ShoesBrown.SetActive(true);
+                ShoesDBrown.SetActive(true);
                 break;
         }
 
@@ -810,7 +990,15 @@ public class MultipleMeshMale : MonoBehaviour
                 //meshes
                 Converse.SetActive(false);
                 //color options
-
+                ShoesBlack.SetActive(true);
+                ShoesWhite.SetActive(true);
+                ShoesLBlue.SetActive(true);
+                ShoesRed.SetActive(true);
+                ShoesGrey.SetActive(true);
+                ShoesPink.SetActive(true);
+                ShoesDBlue.SetActive(true);
+                ShoesBrown.SetActive(true);
+                ShoesDBrown.SetActive(true);
                 break;
             case 1:
                 //text
@@ -819,7 +1007,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Converse.SetActive(true);
                 DC.SetActive(false);
                 //color options
-
+                ShoesBlack.SetActive(true);
+                ShoesWhite.SetActive(true);
+                ShoesLBlue.SetActive(true);
+                ShoesRed.SetActive(true);
+                ShoesGrey.SetActive(true);
+                ShoesPink.SetActive(true);
+                ShoesDBlue.SetActive(true);
+                ShoesBrown.SetActive(false);
+                ShoesDBrown.SetActive(false);
                 break;
             case 2:
                 //text
@@ -829,7 +1025,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Formal.SetActive(false);
                 Converse.SetActive(false);
                 //color options
-
+                ShoesBlack.SetActive(true);
+                ShoesWhite.SetActive(true);
+                ShoesLBlue.SetActive(true);
+                ShoesRed.SetActive(true);
+                ShoesGrey.SetActive(true);
+                ShoesPink.SetActive(true);
+                ShoesDBlue.SetActive(true);
+                ShoesBrown.SetActive(false);
+                ShoesDBrown.SetActive(true);
                 break;
             case 3:
                 //text
@@ -838,7 +1042,15 @@ public class MultipleMeshMale : MonoBehaviour
                 Formal.SetActive(true);
                 DC.SetActive(false);
                 //color options
-
+                ShoesBlack.SetActive(true);
+                ShoesWhite.SetActive(false);
+                ShoesLBlue.SetActive(false);
+                ShoesRed.SetActive(false);
+                ShoesGrey.SetActive(true);
+                ShoesPink.SetActive(false);
+                ShoesDBlue.SetActive(true);
+                ShoesBrown.SetActive(true);
+                ShoesDBrown.SetActive(true);
                 break;
         }
 
@@ -1084,5 +1296,106 @@ public class MultipleMeshMale : MonoBehaviour
     public void TopCamoT()
     {
         TShirt.GetComponent<Renderer>().material.SetTexture("_MainTex", TShirtCamoTex);
+    }
+
+    //BottomClothing
+    public void BottomBlackT()
+    {
+        Jeans.GetComponent<Renderer>().material.SetTexture("_MainTex", JeansBlackT);
+        Shorts.GetComponent<Renderer>().material.SetTexture("_MainTex", ShortsBlackT);
+        Joggers.GetComponent<Renderer>().material.SetTexture("_MainTex", JoggersBlackT);
+    }
+    public void BottomWhiteT()
+    {
+        Jeans.GetComponent<Renderer>().material.SetTexture("_MainTex", JeansWhiteT);
+        Shorts.GetComponent<Renderer>().material.SetTexture("_MainTex", ShortsWhiteT);
+        Joggers.GetComponent<Renderer>().material.SetTexture("_MainTex", JoggersWhiteT);
+    }
+    public void BottomLBlueT()
+    {
+        Jeans.GetComponent<Renderer>().material.SetTexture("_MainTex", JeansLBlueT);
+        Shorts.GetComponent<Renderer>().material.SetTexture("_MainTex", ShortsLBlueT);
+    }
+    public void BottomRedT()
+    {
+        Shorts.GetComponent<Renderer>().material.SetTexture("_MainTex", ShortsRedT);
+        Joggers.GetComponent<Renderer>().material.SetTexture("_MainTex", JoggersRedT);
+    }
+    public void BottomGreyT()
+    {
+        Jeans.GetComponent<Renderer>().material.SetTexture("_MainTex", JeansGreyT);
+        Shorts.GetComponent<Renderer>().material.SetTexture("_MainTex", ShortsGreyT);
+        Joggers.GetComponent<Renderer>().material.SetTexture("_MainTex", JoggersGreyT);
+    }
+    public void BottomPinkT()
+    {
+        Jeans.GetComponent<Renderer>().material.SetTexture("_MainTex", JeansPinkT);
+        Joggers.GetComponent<Renderer>().material.SetTexture("_MainTex", JoggersPinkT);
+    }
+    public void BottomDBlueT()
+    {
+        Jeans.GetComponent<Renderer>().material.SetTexture("_MainTex", JeansDBlueT);
+        Shorts.GetComponent<Renderer>().material.SetTexture("_MainTex", ShortsDBlueT);
+        Joggers.GetComponent<Renderer>().material.SetTexture("_MainTex", JoggersDBlueT);
+    }
+    public void BottomBrownT()
+    {
+        Jeans.GetComponent<Renderer>().material.SetTexture("_MainTex", JeansBrownT);
+        Joggers.GetComponent<Renderer>().material.SetTexture("_MainTex", JoggersBrownT);
+    }
+    public void BottomCamoT()
+    {
+        Jeans.GetComponent<Renderer>().material.SetTexture("_MainTex", JeansCamoT);
+        Shorts.GetComponent<Renderer>().material.SetTexture("_MainTex", ShortsCamoT);
+        Joggers.GetComponent<Renderer>().material.SetTexture("_MainTex", JoggersCamoT);
+    }
+
+    //Shoes
+    public void ShoesBlackT()
+    {
+        Converse.GetComponent<Renderer>().material.SetTexture("_MainTex", ConverseBlackT);
+        DC.GetComponent<Renderer>().material.SetTexture("_MainTex", DCBlackT);
+        Formal.GetComponent<Renderer>().material.SetTexture("_MainTex", FormalBlackT);
+    }
+    public void ShoesWhiteT()
+    {
+        Converse.GetComponent<Renderer>().material.SetTexture("_MainTex", ConverseWhiteT);
+        DC.GetComponent<Renderer>().material.SetTexture("_MainTex", DCWhiteT);
+    }
+    public void ShoesLBlueT()
+    {
+        Converse.GetComponent<Renderer>().material.SetTexture("_MainTex", ConverseLBlueT);
+        DC.GetComponent<Renderer>().material.SetTexture("_MainTex", DCLBlueT);
+    }
+    public void ShoesRedT()
+    {
+        Converse.GetComponent<Renderer>().material.SetTexture("_MainTex", ConverseRedT);
+        DC.GetComponent<Renderer>().material.SetTexture("_MainTex", DCRedT);
+    }
+    public void ShoesGreyT()
+    {
+        Converse.GetComponent<Renderer>().material.SetTexture("_MainTex", ConverseGreyT);
+        DC.GetComponent<Renderer>().material.SetTexture("_MainTex", DCGreyT);
+        Formal.GetComponent<Renderer>().material.SetTexture("_MainTex", FormalGreyT);
+    }
+    public void ShoesPinkT()
+    {
+        Converse.GetComponent<Renderer>().material.SetTexture("_MainTex", ConversePinkT);
+        DC.GetComponent<Renderer>().material.SetTexture("_MainTex", DCPinkT);
+    }
+    public void ShoesDBlueT()
+    {
+        Converse.GetComponent<Renderer>().material.SetTexture("_MainTex", ConverseDBlueT);
+        DC.GetComponent<Renderer>().material.SetTexture("_MainTex", DCDBlueT);
+        Formal.GetComponent<Renderer>().material.SetTexture("_MainTex", FormalDBlueT);
+    }
+    public void ShoesBrownT()
+    {
+        Formal.GetComponent<Renderer>().material.SetTexture("_MainTex", FormalBrownT);
+    }
+    public void ShoesDBrownT()
+    {
+        DC.GetComponent<Renderer>().material.SetTexture("_MainTex", DCDBrownT);
+        Formal.GetComponent<Renderer>().material.SetTexture("_MainTex", FormalDBrownT);
     }
 }
