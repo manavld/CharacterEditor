@@ -32,7 +32,7 @@ public class FeaturesSelection : MonoBehaviour
 
     public GameObject HairWindow, EyeColorWindow, SkinToneWindow, TopClothingWindow, BottomClothingWindow, ShoesWindow;
 
-    public Button RandomizePart2, NextToExport, BackToPart1;
+    public Button NextToExport, BackToPart1;
 
     public GameObject Part2Title;
     
@@ -201,7 +201,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(false);
         BottomClothing.gameObject.SetActive(false);
         Shoes.gameObject.SetActive(false);
-        RandomizePart2.gameObject.SetActive(false);
         NextToExport.gameObject.SetActive(false);
         BackToPart1.gameObject.SetActive(false);
 
@@ -243,7 +242,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(true);
         BottomClothing.gameObject.SetActive(true);
         Shoes.gameObject.SetActive(true);
-        RandomizePart2.gameObject.SetActive(true);
         NextToExport.gameObject.SetActive(true);
         BackToPart1.gameObject.SetActive(true);
     }
@@ -256,7 +254,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(false);
         BottomClothing.gameObject.SetActive(false);
         Shoes.gameObject.SetActive(false);
-        RandomizePart2.gameObject.SetActive(false);
         NextToExport.gameObject.SetActive(false);
         BackToPart1.gameObject.SetActive(false);
 
@@ -271,7 +268,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(false);
         BottomClothing.gameObject.SetActive(false);
         Shoes.gameObject.SetActive(false);
-        RandomizePart2.gameObject.SetActive(false);
         NextToExport.gameObject.SetActive(false);
         BackToPart1.gameObject.SetActive(false);
 
@@ -286,7 +282,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(false);
         BottomClothing.gameObject.SetActive(false);
         Shoes.gameObject.SetActive(false);
-        RandomizePart2.gameObject.SetActive(false);
         NextToExport.gameObject.SetActive(false);
         BackToPart1.gameObject.SetActive(false);
 
@@ -301,7 +296,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(false);
         BottomClothing.gameObject.SetActive(false);
         Shoes.gameObject.SetActive(false);
-        RandomizePart2.gameObject.SetActive(false);
         NextToExport.gameObject.SetActive(false);
         BackToPart1.gameObject.SetActive(false);
 
@@ -316,7 +310,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(false);
         BottomClothing.gameObject.SetActive(false);
         Shoes.gameObject.SetActive(false);
-        RandomizePart2.gameObject.SetActive(false);
         NextToExport.gameObject.SetActive(false);
         BackToPart1.gameObject.SetActive(false);
 
@@ -331,7 +324,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(false);
         BottomClothing.gameObject.SetActive(false);
         Shoes.gameObject.SetActive(false);
-        RandomizePart2.gameObject.SetActive(false);
         NextToExport.gameObject.SetActive(false);
         BackToPart1.gameObject.SetActive(false);
 
@@ -346,7 +338,6 @@ public class FeaturesSelection : MonoBehaviour
         TopClothing.gameObject.SetActive(false);
         BottomClothing.gameObject.SetActive(false);
         Shoes.gameObject.SetActive(false);
-        RandomizePart2.gameObject.SetActive(false);
         NextToExport.gameObject.SetActive(false);
         BackToPart1.gameObject.SetActive(false);
         Part2Title.gameObject.SetActive(false);
