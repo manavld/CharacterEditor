@@ -19,6 +19,24 @@ public class ModelExport : MonoBehaviour
     private GameObject Beard, BackComb, Messy, MiddleComb, Ponytail, ShavedSide, Short, Mustache;
     public GameObject ClothesInactive, HairInactive;
 
+    //Other textures
+
+    //body
+    public Texture2D BodyNormal, BodyHeight, BodyMetallic, BodyAO, BodyRoughness;
+    public Texture2D OtherNormal, OtherHeight, OtherMetallic, OtherRoughness;
+    public Texture2D ExtraNormal, ExtraHeight, ExtraMetallic, ExtraRoughness;
+    //clothes
+    public Texture2D ShirtNormal, ShirtAO, ShirtMetallic, ShirtHeight;
+    public Texture2D JacketNormal, JacketAO, JacketMetallic, JacketHeight, JacketRoughness;
+    public Texture2D TShirtNormal, TShirtRoughness, TShirtMetallic, TShirtHeight; 
+    public Texture2D TanktopNormal, TanktopAO, TanktopMetallic, TanktopHeight;
+    public Texture2D JeansNormal, JeansMetallic, JeansHeight, JeansRoughness;
+    public Texture2D JoggersNormal, JoggersAO, JoggersRoughness, JoggersHeight;
+    public Texture2D ShortsNormal;
+    public Texture2D ConverseNormal, ConverseAO, ConverseMetallic, ConverseHeight;
+    public Texture2D DCNormal, DCAO, DCHeight;
+    public Texture2D FormalNormal, FormalRoughness, FormalMetallic, FormalHeight;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,26 +47,26 @@ public class ModelExport : MonoBehaviour
             Extra = model.transform.GetChild(2).gameObject;
 
         //Hair Meshes
-        Beard = Hair.transform.GetChild(0).gameObject;
+        Beard = Hair.transform.GetChild(0).gameObject;      //long
         BackComb = Hair.transform.GetChild(1).gameObject;
         Messy = Hair.transform.GetChild(2).gameObject;
         MiddleComb = Hair.transform.GetChild(3).gameObject;
         Ponytail = Hair.transform.GetChild(4).gameObject;
         ShavedSide = Hair.transform.GetChild(5).gameObject;
         Short = Hair.transform.GetChild(6).gameObject;
-        Mustache = Hair.transform.GetChild(7).gameObject;
+        Mustache = Hair.transform.GetChild(7).gameObject;    //ponytailx2
 
         //TopClothes Meshes
         TShirt = Clothing.transform.GetChild(0).gameObject;
         TankTop = Clothing.transform.GetChild(1).gameObject;
-        Shirt = Clothing.transform.GetChild(2).gameObject;
+        Shirt = Clothing.transform.GetChild(2).gameObject;     //Dress
         Jacket = Clothing.transform.GetChild(3).gameObject;
         Shorts = Clothing.transform.GetChild(4).gameObject;
         Jeans = Clothing.transform.GetChild(5).gameObject;
         Joggers = Clothing.transform.GetChild(6).gameObject;
         Converse = Clothing.transform.GetChild(7).gameObject;
         DC = Clothing.transform.GetChild(8).gameObject;
-        Formal = Clothing.transform.GetChild(9).gameObject;
+        Formal = Clothing.transform.GetChild(9).gameObject;     //Crocs
 
         backExport = export.transform.Find("BackButton").gameObject;
     }
@@ -56,9 +74,7 @@ public class ModelExport : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         
-        //Beard.transform.parent = HairInactive.transform;
     }
 
     public void ExportTexture(Texture2D t)
@@ -69,6 +85,17 @@ public class ModelExport : MonoBehaviour
         //exportName = textureFolder + "\\" + fileName;
         System.IO.File.WriteAllBytes(Application.dataPath + fileName, exTexture.EncodeToPNG());
     }
+    /*
+    public void ExportNormal(Texture2D t)
+    {
+        Texture2D exTexture = new Texture2D(t.width, t.height, TextureFormat.RGBA32, false, true);
+        exTexture.SetPixels(t.GetPixels());
+        string fileName = $"{t.name}.png";
+        //exportName = textureFolder + "\\" + fileName;
+        System.IO.File.WriteAllBytes(Application.dataPath + fileName, exTexture.EncodeToPNG());
+    }
+    */
+    
 
     public void OnClickEXPORT()
     {
@@ -118,27 +145,191 @@ public class ModelExport : MonoBehaviour
             Formal.transform.parent = ClothesInactive.transform;
 
         //fbx
-        //FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", true, true);
+        FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", false, true);
 
 
         //export materials
         if (model.name == "Male_LP_BlendShapes") { 
-             //Skin
-             ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
-
-             //Other
-             ExportTexture(Other.GetComponent<Renderer>().material.mainTexture as Texture2D);
-
+            //Skin
+            ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
+            ExportTexture(BodyHeight);
+            ExportTexture(BodyNormal);
+            ExportTexture(BodyMetallic);
+            ExportTexture(BodyAO);
+            //Other
+            ExportTexture(Other.GetComponent<Renderer>().material.mainTexture as Texture2D);
+            ExportTexture(OtherHeight);
+            ExportTexture(OtherNormal);
+            ExportTexture(OtherMetallic);
+            ExportTexture(OtherRoughness);
+            //clothes
+            if (TShirt.activeSelf == true)
+            {
+                ExportTexture(TShirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(TShirtNormal);
+                ExportTexture(TShirtMetallic);
+                ExportTexture(TShirtRoughness);
+                ExportTexture(TShirtHeight);
+            }
+            if (TankTop.activeSelf == true)
+            {
+                ExportTexture(TankTop.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(TanktopHeight);
+                ExportTexture(TanktopNormal);
+                ExportTexture(TanktopMetallic);
+                ExportTexture(TanktopAO);
+            }
+            if (Jacket.activeSelf == true)
+            {
+                ExportTexture(Jacket.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(JacketNormal);
+                ExportTexture(JacketRoughness);
+            }
+            if (Shirt.activeSelf == true) 
+            {
+                ExportTexture(Shirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(ShirtAO);
+                ExportTexture(ShirtNormal);
+                ExportTexture(ShirtMetallic);
+                ExportTexture(ShirtHeight);
+            }
+            if (Shorts.activeSelf == true)
+            {
+                ExportTexture(Shorts.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(ShortsNormal);
+            }
+            if (Jeans.activeSelf == true)
+            {
+                ExportTexture(Jeans.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(JeansHeight);
+                ExportTexture(JeansNormal);
+                ExportTexture(JeansMetallic);
+                ExportTexture(JeansRoughness);
+            }
+            if (Joggers.activeSelf == true)
+            {
+                ExportTexture(Joggers.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(JoggersHeight);
+                ExportTexture(JoggersNormal);
+                ExportTexture(JoggersAO);
+                ExportTexture(JoggersRoughness);
+            }
+            if (Converse.activeSelf == true)
+            {
+                ExportTexture(Converse.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(ConverseHeight);
+                ExportTexture(ConverseNormal);
+                ExportTexture(ConverseAO);
+                ExportTexture(ConverseMetallic);
+            }
+            if (DC.activeSelf == true)
+            {
+                ExportTexture(DC.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(DCHeight);
+                ExportTexture(DCNormal);
+                ExportTexture(DCAO);
+            }
+            if (Formal.activeSelf == true) 
+            {
+                ExportTexture(Formal.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(FormalHeight);
+                ExportTexture(FormalNormal);
+                ExportTexture(FormalMetallic);
+            }
         }   
         if (model.name == "Female_LP_BlendShapes") { 
-             //Skin
-             ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
-
-             //Other
-             ExportTexture(Other.GetComponent<Renderer>().material.mainTexture as Texture2D);
-
-             //Extra
-             ExportTexture(Extra.GetComponent<Renderer>().material.mainTexture as Texture2D);
+            //Skin
+            ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
+            ExportTexture(BodyHeight);
+            ExportTexture(BodyNormal);
+            ExportTexture(BodyMetallic);
+            ExportTexture(BodyAO);
+            ExportTexture(BodyRoughness);
+            //Other
+            ExportTexture(Other.GetComponent<Renderer>().material.mainTexture as Texture2D);
+            ExportTexture(OtherHeight);
+            ExportTexture(OtherNormal);
+            ExportTexture(OtherMetallic);
+            ExportTexture(OtherRoughness);
+            //Extra
+            ExportTexture(Extra.GetComponent<Renderer>().material.mainTexture as Texture2D);
+            ExportTexture(ExtraHeight);
+            ExportTexture(ExtraNormal);
+            ExportTexture(ExtraMetallic);
+            ExportTexture(ExtraRoughness);
+            //clothes
+            if (TShirt.activeSelf == true)
+            {
+                ExportTexture(TShirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(TShirtNormal);
+                ExportTexture(TShirtMetallic);
+            }
+            if (TankTop.activeSelf == true)
+            {
+                ExportTexture(TankTop.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(TanktopHeight);
+                ExportTexture(TanktopNormal);
+                ExportTexture(TanktopMetallic);
+                ExportTexture(TanktopAO);
+            }
+            if (Jacket.activeSelf == true)
+            {
+                ExportTexture(Jacket.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(JacketHeight);
+                ExportTexture(JacketNormal);
+                ExportTexture(JacketMetallic);
+                ExportTexture(JacketAO);
+                ExportTexture(JacketRoughness);
+            }
+            if (Shirt.activeSelf == true) //Dress 
+            {
+                ExportTexture(Shirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(ShirtAO);
+            }
+            if (Shorts.activeSelf == true)
+            {
+                ExportTexture(Shorts.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(ShortsNormal);
+            }
+            if (Jeans.activeSelf == true)
+            {
+                ExportTexture(Jeans.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(JeansHeight);
+                ExportTexture(JeansNormal);
+                ExportTexture(JeansMetallic);
+                ExportTexture(JeansRoughness);
+            }
+            if (Joggers.activeSelf == true)
+            {
+                ExportTexture(Joggers.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(JoggersHeight);
+                ExportTexture(JoggersNormal);
+                ExportTexture(JoggersAO);
+                ExportTexture(JoggersRoughness);
+            }
+            if (Converse.activeSelf == true)
+            {
+                ExportTexture(Converse.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(ConverseHeight);
+                ExportTexture(ConverseNormal);
+                ExportTexture(ConverseAO);
+                ExportTexture(ConverseMetallic);
+            }
+            if (DC.activeSelf == true)
+            {
+                ExportTexture(DC.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(DCHeight);
+                ExportTexture(DCNormal);
+                ExportTexture(DCAO);
+            }
+            if (Formal.activeSelf == true) //Crocs 
+            {
+                ExportTexture(Formal.GetComponent<Renderer>().material.mainTexture as Texture2D);
+                ExportTexture(FormalHeight);
+                ExportTexture(FormalNormal);
+                ExportTexture(FormalMetallic);
+                ExportTexture(FormalRoughness);
+            }
         }   
 
         //hair
@@ -174,47 +365,7 @@ public class ModelExport : MonoBehaviour
         {
             ExportTexture(Beard.GetComponent<Renderer>().material.mainTexture as Texture2D);
         }
-        //clothes
-        if (TShirt.activeSelf == true)
-        {
-            ExportTexture(TShirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (TankTop.activeSelf == true)
-        {
-            ExportTexture(TankTop.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (Jacket.activeSelf == true)
-        {
-            ExportTexture(Jacket.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (Shirt.activeSelf == true) //Dress or shirt TODO
-        {
-            ExportTexture(Shirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (Shorts.activeSelf == true)
-        {
-            ExportTexture(Shorts.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (Jeans.activeSelf == true)
-        {
-            ExportTexture(Jeans.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (Joggers.activeSelf == true)
-        {
-            ExportTexture(Joggers.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (Converse.activeSelf == true)
-        {
-            ExportTexture(Converse.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (DC.activeSelf == true)
-        {
-            ExportTexture(DC.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
-        if (Formal.activeSelf == true) //Crocs or Formal TODO
-        {
-            ExportTexture(Formal.GetComponent<Renderer>().material.mainTexture as Texture2D);
-        }
+       
 
         //info text
         export.transform.Find("Information").gameObject.SetActive(true);
@@ -224,75 +375,7 @@ public class ModelExport : MonoBehaviour
         model.transform.localEulerAngles = new Vector3(0, 165, 0);
         backExport.SetActive(false);
 
-        /*
-        //Put back inactive meshes
-        //hair
-        BackComb.transform.parent = Hair.transform;
-        BackComb.transform.localEulerAngles = new Vector3(0, 0, 0);
-        Messy.transform.parent = Hair.transform;
-        Messy.transform.localEulerAngles = new Vector3(0, 0, 0);
-        MiddleComb.transform.parent = Hair.transform;
-        MiddleComb.transform.rotation = Quaternion.identity;
-        Ponytail.transform.parent = Hair.transform;
-        Ponytail.transform.rotation = Quaternion.identity;
-        ShavedSide.transform.parent = Hair.transform;
-        ShavedSide.transform.rotation = Quaternion.identity;
-        Short.transform.parent = Hair.transform;
-        Short.transform.rotation = Quaternion.identity;
-        Mustache.transform.parent = Hair.transform;
-        Mustache.transform.rotation = Quaternion.identity;
-        Beard.transform.parent = Hair.transform;
-        Beard.transform.rotation = Quaternion.identity;
-
-        //clothes
-        TShirt.transform.parent = Clothing.transform;
-        TShirt.transform.rotation = Quaternion.identity;
-        TankTop.transform.parent = Clothing.transform;
-        TankTop.transform.rotation = Quaternion.identity;
-        Jacket.transform.parent = Clothing.transform;
-        Jacket.transform.rotation = Quaternion.identity;
-        Shirt.transform.parent = Clothing.transform;
-        Shirt.transform.rotation = Quaternion.identity;
-        Shorts.transform.parent = Clothing.transform;
-        Shorts.transform.rotation = Quaternion.identity;
-        Jeans.transform.parent = Clothing.transform;
-        Jeans.transform.rotation = Quaternion.identity;
-        Joggers.transform.parent = Clothing.transform;
-        Joggers.transform.rotation = Quaternion.identity;
-        Converse.transform.parent = Clothing.transform;
-        Converse.transform.rotation = Quaternion.identity;
-        DC.transform.parent = Clothing.transform;
-        DC.transform.rotation = Quaternion.identity;
-        Formal.transform.parent = Clothing.transform;
-        Formal.transform.rotation = Quaternion.identity;
-        */
-
-
-        //ModelExporter.ExportObject(Application.dataPath + "ExportedModel.fbx", model);
-
-
-
-        /*
-        using (FbxManager fbxManager = FbxManager.Create())
-        {
-            // configure IO settings.
-            fbxManager.SetIOSettings(FbxIOSettings.Create(fbxManager, Globals.IOSROOT));
-
-            // Export the scene
-            using (FbxExporter exporter = FbxExporter.Create(fbxManager, "myExporter"))
-            {
-
-                // Initialize the exporter.
-                bool status = exporter.Initialize("exported.fbx", -1, fbxManager.GetIOSettings());
-
-                // Create a new scene to export
-                FbxScene scene = FbxScene.Create(fbxManager, "Male");
-
-                // Export the scene to the file.
-                exporter.Export(scene);
-            }
-        }
-        */
+        
 
     }
 

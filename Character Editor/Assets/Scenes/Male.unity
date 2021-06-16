@@ -28312,6 +28312,13 @@ MonoBehaviour:
   TopWindow: {fileID: 1815517800}
   BottomWindow: {fileID: 68254164}
   ShoesWindow: {fileID: 1233514485}
+  SkinTex1: {fileID: 0}
+  SkinTex2: {fileID: 0}
+  SkinTex3: {fileID: 0}
+  SkinTex4: {fileID: 0}
+  SkinTex5: {fileID: 0}
+  SkinTex6: {fileID: 0}
+  SkinTex7: {fileID: 0}
 --- !u!1 &1192499638
 GameObject:
   m_ObjectHideFlags: 0
@@ -42529,6 +42536,56 @@ MonoBehaviour:
   Hair: {fileID: 7398008768989091374}
   ClothesInactive: {fileID: 1218236431}
   HairInactive: {fileID: 1163199754}
+  BodyNormal: {fileID: 2800000, guid: 9ea95d907b1d45644b4030ab6a0eb36c, type: 3}
+  BodyHeight: {fileID: 2800000, guid: 5272176fd7526ef44bed52a337e268c7, type: 3}
+  BodyMetallic: {fileID: 2800000, guid: 4b5e1b0c5eac74f479cc2da1b71a70e9, type: 3}
+  BodyAO: {fileID: 2800000, guid: d6214b98c12ae3f4193f029bad524f15, type: 3}
+  BodyRoughness: {fileID: 0}
+  OtherNormal: {fileID: 2800000, guid: eb5b96de6ddc6bf4490ee3bc8425458e, type: 3}
+  OtherHeight: {fileID: 2800000, guid: b77b43054051f7e418dda751723690e1, type: 3}
+  OtherMetallic: {fileID: 2800000, guid: 9de909a93c993ca49aec6887e72dbfd3, type: 3}
+  OtherRoughness: {fileID: 2800000, guid: da0f1b7656026524aa7f2054d953504d, type: 3}
+  ExtraNormal: {fileID: 0}
+  ExtraHeight: {fileID: 0}
+  ExtraMetallic: {fileID: 0}
+  ExtraRoughness: {fileID: 0}
+  ShirtNormal: {fileID: 2800000, guid: 373165303c7d4c84d9f1585466d3cdf1, type: 3}
+  ShirtAO: {fileID: 2800000, guid: f65e72620ccf22342befb4abbc3e2556, type: 3}
+  ShirtMetallic: {fileID: 2800000, guid: addcb11542925c74ebc357132d759e36, type: 3}
+  ShirtHeight: {fileID: 2800000, guid: 3f3cf21db1437f04d81d95fa0383bb1d, type: 3}
+  JacketNormal: {fileID: 2800000, guid: 06e597bfb08e0174b973421356d88b18, type: 3}
+  JacketAO: {fileID: 0}
+  JacketMetallic: {fileID: 0}
+  JacketHeight: {fileID: 0}
+  JacketRoughness: {fileID: 2800000, guid: 1932239a5cd5ed5409da05a6fa0242e2, type: 3}
+  TShirtNormal: {fileID: 2800000, guid: 53f82d4ab1b814143ba9dd27b0ec5c0b, type: 3}
+  TShirtRoughness: {fileID: 2800000, guid: d0c4cb2eb3c51de4bad5178cde68c6db, type: 3}
+  TShirtMetallic: {fileID: 2800000, guid: e9f51f2669556b54a9499c6869bcc82f, type: 3}
+  TShirtHeight: {fileID: 2800000, guid: 5b5c23eeaaa54294684b14ee7a989c29, type: 3}
+  TanktopNormal: {fileID: 2800000, guid: cbcb63cec3854864ab4fcfc36675f82d, type: 3}
+  TanktopAO: {fileID: 2800000, guid: 4cfde86d7c14d79488a67dd287f83658, type: 3}
+  TanktopMetallic: {fileID: 2800000, guid: d9547b7eeb561e5429c0bdb587692c8e, type: 3}
+  TanktopHeight: {fileID: 2800000, guid: 12a3f9d75e96d744ca18e4045e67a4f4, type: 3}
+  JeansNormal: {fileID: 2800000, guid: 1fb7977bcb51caa44b78706ba0d0cb68, type: 3}
+  JeansMetallic: {fileID: 2800000, guid: 0f953a99b3dbcd74ca2de7bf74d5f64e, type: 3}
+  JeansHeight: {fileID: 2800000, guid: 258e4996f5dac99498fbe772cc054b59, type: 3}
+  JeansRoughness: {fileID: 2800000, guid: 57013da57717bbf4c93ed788f77632a0, type: 3}
+  JoggersNormal: {fileID: 2800000, guid: 593ddeb78b9ca0c4a878eb5aacec727c, type: 3}
+  JoggersAO: {fileID: 2800000, guid: c27b799abf69f284d84ec86a3f2f48db, type: 3}
+  JoggersRoughness: {fileID: 2800000, guid: b35f783f05deb4640819295107977b2d, type: 3}
+  JoggersHeight: {fileID: 2800000, guid: a7a4490ffb156ed499ae36215b8971a4, type: 3}
+  ShortsNormal: {fileID: 2800000, guid: 362f3f667b1bfcf41b4e26eff73d73fd, type: 3}
+  ConverseNormal: {fileID: 2800000, guid: 280cddeee1ea7d74eac48f9323f4ca35, type: 3}
+  ConverseAO: {fileID: 2800000, guid: b6c499cf02bfc45499c314dc018228ef, type: 3}
+  ConverseMetallic: {fileID: 2800000, guid: 7a3eb37b96e8a3943ac322336b06f2d6, type: 3}
+  ConverseHeight: {fileID: 2800000, guid: 1e898b9b2a07e3c4e974239b16f7eeca, type: 3}
+  DCNormal: {fileID: 2800000, guid: 6f647397f74ddd74db54f7afa8d36154, type: 3}
+  DCAO: {fileID: 2800000, guid: fdf737951986b9b4dafa1a436c7c9d1a, type: 3}
+  DCHeight: {fileID: 2800000, guid: 52cb448392507db4b85f5d09062b921a, type: 3}
+  FormalNormal: {fileID: 2800000, guid: 64c6dd6467c584840b354d317099bdd6, type: 3}
+  FormalRoughness: {fileID: 0}
+  FormalMetallic: {fileID: 2800000, guid: d0816512a2e5df64caa5f308d456c87e, type: 3}
+  FormalHeight: {fileID: 2800000, guid: a49e931ef6be0d044ac6964007698365, type: 3}
 --- !u!114 &1867529008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49476,8 +49533,8 @@ Transform:
   - {fileID: 2614088715408288651}
   - {fileID: 5347246626982028701}
   - {fileID: 1398883526253846989}
-  - {fileID: 8361530848983027555}
   - {fileID: 4464925522676574290}
+  - {fileID: 8361530848983027555}
   - {fileID: 5686730682054887416}
   - {fileID: 5370929466483313898}
   - {fileID: 5544305229635846190}
@@ -50077,7 +50134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2137230453083493460}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4710873371899306795
 MeshFilter:
@@ -50661,7 +50718,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2137230453083493460}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8367955494742231465
 MeshFilter:
