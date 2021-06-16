@@ -8,9 +8,11 @@ using UnityFBXExporter;
 
 public class ModelExport : MonoBehaviour
 {
+    private MultipleMeshMale male;
     public GameObject model;
     public GameObject export;
     private GameObject backExport;
+    private GameObject Body, Other, Extra;
 
     public GameObject Clothing, Hair;
     private GameObject Jacket, Shirt, TankTop, TShirt, Shorts, Jeans, Joggers, Converse, DC, Formal;
@@ -20,7 +22,12 @@ public class ModelExport : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Body
+        Body = model.transform.GetChild(0).gameObject;
+        Other = model.transform.GetChild(1).gameObject;
+        if (model.name == "Female_LP_BlendShapes")
+            Extra = model.transform.GetChild(2).gameObject;
+
         //Hair Meshes
         Beard = Hair.transform.GetChild(0).gameObject;
         BackComb = Hair.transform.GetChild(1).gameObject;
@@ -54,13 +61,22 @@ public class ModelExport : MonoBehaviour
         //Beard.transform.parent = HairInactive.transform;
     }
 
+    public void ExportTexture(Texture2D t)
+    {
+        Texture2D exTexture = new Texture2D(t.width, t.height, TextureFormat.RGBA32, false);
+        exTexture.SetPixels(t.GetPixels());
+        string fileName = $"{t.name}.png";
+        //exportName = textureFolder + "\\" + fileName;
+        System.IO.File.WriteAllBytes(Application.dataPath + fileName, exTexture.EncodeToPNG());
+    }
+
     public void OnClickEXPORT()
     {
         //Set rotation 0
         model.transform.rotation = Quaternion.identity;
 
         //Deleting inactive
-      
+
         //hair
         if (BackComb.activeSelf == false)
             BackComb.transform.parent = HairInactive.transform;
@@ -78,7 +94,7 @@ public class ModelExport : MonoBehaviour
             Mustache.transform.parent = HairInactive.transform;
         if (Beard.activeSelf == false)
             Beard.transform.parent = HairInactive.transform;
-        
+
         //clothes
         if (TShirt.activeSelf == false)
             TShirt.transform.parent = ClothesInactive.transform;
@@ -102,12 +118,103 @@ public class ModelExport : MonoBehaviour
             Formal.transform.parent = ClothesInactive.transform;
 
         //fbx
-        FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", false, true);
+        //FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", true, true);
 
 
         //export materials
+        if (model.name == "Male_LP_BlendShapes") { 
+             //Skin
+             ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
 
+             //Other
+             ExportTexture(Other.GetComponent<Renderer>().material.mainTexture as Texture2D);
 
+        }   
+        if (model.name == "Female_LP_BlendShapes") { 
+             //Skin
+             ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
+
+             //Other
+             ExportTexture(Other.GetComponent<Renderer>().material.mainTexture as Texture2D);
+
+             //Extra
+             ExportTexture(Extra.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }   
+
+        //hair
+        if (BackComb.activeSelf == true)
+        {
+            ExportTexture(BackComb.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Messy.activeSelf == true)
+        {
+            ExportTexture(Messy.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (MiddleComb.activeSelf == true)
+        {
+            ExportTexture(MiddleComb.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Ponytail.activeSelf == true)
+        {
+            ExportTexture(Ponytail.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (ShavedSide.activeSelf == true)
+        {
+            ExportTexture(ShavedSide.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Short.activeSelf == true)
+        {
+            ExportTexture(Short.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Mustache.activeSelf == true)
+        {
+            ExportTexture(Mustache.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Beard.activeSelf == true)
+        {
+            ExportTexture(Beard.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        //clothes
+        if (TShirt.activeSelf == true)
+        {
+            ExportTexture(TShirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (TankTop.activeSelf == true)
+        {
+            ExportTexture(TankTop.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Jacket.activeSelf == true)
+        {
+            ExportTexture(Jacket.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Shirt.activeSelf == true) //Dress or shirt TODO
+        {
+            ExportTexture(Shirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Shorts.activeSelf == true)
+        {
+            ExportTexture(Shorts.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Jeans.activeSelf == true)
+        {
+            ExportTexture(Jeans.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Joggers.activeSelf == true)
+        {
+            ExportTexture(Joggers.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Converse.activeSelf == true)
+        {
+            ExportTexture(Converse.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (DC.activeSelf == true)
+        {
+            ExportTexture(DC.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
+        if (Formal.activeSelf == true) //Crocs or Formal TODO
+        {
+            ExportTexture(Formal.GetComponent<Renderer>().material.mainTexture as Texture2D);
+        }
 
         //info text
         export.transform.Find("Information").gameObject.SetActive(true);
@@ -188,4 +295,7 @@ public class ModelExport : MonoBehaviour
         */
 
     }
+
+
+   
 }

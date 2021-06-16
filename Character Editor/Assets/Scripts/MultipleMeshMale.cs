@@ -36,7 +36,7 @@ public class MultipleMeshMale : MonoBehaviour
 
     //Textures---------
     //Skin
-    private Texture SkinTex1, SkinTex2, SkinTex3, SkinTex4, SkinTex5, SkinTex6, SkinTex7;
+    public Texture2D SkinTex1, SkinTex2, SkinTex3, SkinTex4, SkinTex5, SkinTex6, SkinTex7;
 
     //Eyes
     private Texture EyeLBrownTex, EyeGreenTex, EyeLGreenTex, EyeBlueTex, EyeLBlueTex, EyeHazelTex, EyeBrownTex;
@@ -298,7 +298,15 @@ public class MultipleMeshMale : MonoBehaviour
     //Multiple Mesh Functions
     public void HairNext()
     {
-        if(HairList < 6)
+        /*
+        Texture2D exTexture = new Texture2D(SkinTex1.width, SkinTex1.height, TextureFormat.RGBA32, false);
+        exTexture.SetPixels(SkinTex1.GetPixels());
+        string fileName = $"{SkinTex1.name}.png";
+        //exportName = textureFolder + "\\" + fileName;
+        System.IO.File.WriteAllBytes(Application.dataPath + fileName, exTexture.EncodeToPNG());
+        */
+
+        if (HairList < 6)
         {
             HairList++;
         }
