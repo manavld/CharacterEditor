@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class MouseRotation : MonoBehaviour
 {
-    float speed = 10;
+    float speed = 6;
+
+
   
     void OnMouseDrag()
     {
+      
         float rotX = Input.GetAxis("Mouse X") * speed;
         float rotY = Input.GetAxis("Mouse Y") * speed;
 
         transform.Rotate(Vector3.down, rotX);
         transform.Rotate(Vector3.right, -rotY);
+        
+
     }
 
     public void onResetRotation()
