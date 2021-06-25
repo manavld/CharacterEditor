@@ -85,7 +85,7 @@ public class ModelExport : MonoBehaviour
         //exportName = textureFolder + "\\" + fileName;
         System.IO.File.WriteAllBytes(Application.dataPath + fileName, exTexture.EncodeToPNG());
     }
-    /*
+    
     public void ExportNormal(Texture2D t)
     {
         Texture2D exTexture = new Texture2D(t.width, t.height, TextureFormat.RGBA32, false, true);
@@ -94,7 +94,7 @@ public class ModelExport : MonoBehaviour
         //exportName = textureFolder + "\\" + fileName;
         System.IO.File.WriteAllBytes(Application.dataPath + fileName, exTexture.EncodeToPNG());
     }
-    */
+    
     
 
     public void OnClickEXPORT()
@@ -154,20 +154,20 @@ public class ModelExport : MonoBehaviour
             //Skin
             ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
             ExportTexture(BodyHeight);
-            ExportTexture(BodyNormal);
+            ExportNormal(BodyNormal);
             ExportTexture(BodyMetallic);
             ExportTexture(BodyAO);
             //Other
             ExportTexture(Other.GetComponent<Renderer>().material.mainTexture as Texture2D);
             ExportTexture(OtherHeight);
-            ExportTexture(OtherNormal);
+            ExportNormal(OtherNormal);
             ExportTexture(OtherMetallic);
             ExportTexture(OtherRoughness);
             //clothes
             if (TShirt.activeSelf == true)
             {
                 ExportTexture(TShirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
-                ExportTexture(TShirtNormal);
+                ExportNormal(TShirtNormal);
                 ExportTexture(TShirtMetallic);
                 ExportTexture(TShirtRoughness);
                 ExportTexture(TShirtHeight);
@@ -176,34 +176,34 @@ public class ModelExport : MonoBehaviour
             {
                 ExportTexture(TankTop.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(TanktopHeight);
-                ExportTexture(TanktopNormal);
+                ExportNormal(TanktopNormal);
                 ExportTexture(TanktopMetallic);
                 ExportTexture(TanktopAO);
             }
             if (Jacket.activeSelf == true)
             {
                 ExportTexture(Jacket.GetComponent<Renderer>().material.mainTexture as Texture2D);
-                ExportTexture(JacketNormal);
+                ExportNormal(JacketNormal);
                 ExportTexture(JacketRoughness);
             }
             if (Shirt.activeSelf == true) 
             {
                 ExportTexture(Shirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(ShirtAO);
-                ExportTexture(ShirtNormal);
+                ExportNormal(ShirtNormal);
                 ExportTexture(ShirtMetallic);
                 ExportTexture(ShirtHeight);
             }
             if (Shorts.activeSelf == true)
             {
                 ExportTexture(Shorts.GetComponent<Renderer>().material.mainTexture as Texture2D);
-                ExportTexture(ShortsNormal);
+                ExportNormal(ShortsNormal);
             }
             if (Jeans.activeSelf == true)
             {
                 ExportTexture(Jeans.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(JeansHeight);
-                ExportTexture(JeansNormal);
+                ExportNormal(JeansNormal);
                 ExportTexture(JeansMetallic);
                 ExportTexture(JeansRoughness);
             }
@@ -211,7 +211,7 @@ public class ModelExport : MonoBehaviour
             {
                 ExportTexture(Joggers.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(JoggersHeight);
-                ExportTexture(JoggersNormal);
+                ExportNormal(JoggersNormal);
                 ExportTexture(JoggersAO);
                 ExportTexture(JoggersRoughness);
             }
@@ -219,7 +219,7 @@ public class ModelExport : MonoBehaviour
             {
                 ExportTexture(Converse.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(ConverseHeight);
-                ExportTexture(ConverseNormal);
+                ExportNormal(ConverseNormal);
                 ExportTexture(ConverseAO);
                 ExportTexture(ConverseMetallic);
             }
@@ -227,14 +227,14 @@ public class ModelExport : MonoBehaviour
             {
                 ExportTexture(DC.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(DCHeight);
-                ExportTexture(DCNormal);
+                ExportNormal(DCNormal);
                 ExportTexture(DCAO);
             }
             if (Formal.activeSelf == true) 
             {
                 ExportTexture(Formal.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(FormalHeight);
-                ExportTexture(FormalNormal);
+                ExportNormal(FormalNormal);
                 ExportTexture(FormalMetallic);
             }
         }   
@@ -242,34 +242,34 @@ public class ModelExport : MonoBehaviour
             //Skin
             ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
             ExportTexture(BodyHeight);
-            ExportTexture(BodyNormal);
+            ExportNormal(BodyNormal);
             ExportTexture(BodyMetallic);
             ExportTexture(BodyAO);
             ExportTexture(BodyRoughness);
             //Other
             ExportTexture(Other.GetComponent<Renderer>().material.mainTexture as Texture2D);
             ExportTexture(OtherHeight);
-            ExportTexture(OtherNormal);
+            ExportNormal(OtherNormal);
             ExportTexture(OtherMetallic);
             ExportTexture(OtherRoughness);
             //Extra
             ExportTexture(Extra.GetComponent<Renderer>().material.mainTexture as Texture2D);
             ExportTexture(ExtraHeight);
-            ExportTexture(ExtraNormal);
+            ExportNormal(ExtraNormal);
             ExportTexture(ExtraMetallic);
             ExportTexture(ExtraRoughness);
             //clothes
             if (TShirt.activeSelf == true)
             {
                 ExportTexture(TShirt.GetComponent<Renderer>().material.mainTexture as Texture2D);
-                ExportTexture(TShirtNormal);
+                ExportNormal(TShirtNormal);
                 ExportTexture(TShirtMetallic);
             }
             if (TankTop.activeSelf == true)
             {
                 ExportTexture(TankTop.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(TanktopHeight);
-                ExportTexture(TanktopNormal);
+                ExportNormal(TanktopNormal);
                 ExportTexture(TanktopMetallic);
                 ExportTexture(TanktopAO);
             }
@@ -277,7 +277,7 @@ public class ModelExport : MonoBehaviour
             {
                 ExportTexture(Jacket.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(JacketHeight);
-                ExportTexture(JacketNormal);
+                ExportNormal(JacketNormal);
                 ExportTexture(JacketMetallic);
                 ExportTexture(JacketAO);
                 ExportTexture(JacketRoughness);
@@ -290,13 +290,13 @@ public class ModelExport : MonoBehaviour
             if (Shorts.activeSelf == true)
             {
                 ExportTexture(Shorts.GetComponent<Renderer>().material.mainTexture as Texture2D);
-                ExportTexture(ShortsNormal);
+                ExportNormal(ShortsNormal);
             }
             if (Jeans.activeSelf == true)
             {
                 ExportTexture(Jeans.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(JeansHeight);
-                ExportTexture(JeansNormal);
+                ExportNormal(JeansNormal);
                 ExportTexture(JeansMetallic);
                 ExportTexture(JeansRoughness);
             }
@@ -304,7 +304,7 @@ public class ModelExport : MonoBehaviour
             {
                 ExportTexture(Joggers.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(JoggersHeight);
-                ExportTexture(JoggersNormal);
+                ExportNormal(JoggersNormal);
                 ExportTexture(JoggersAO);
                 ExportTexture(JoggersRoughness);
             }
@@ -312,7 +312,7 @@ public class ModelExport : MonoBehaviour
             {
                 ExportTexture(Converse.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(ConverseHeight);
-                ExportTexture(ConverseNormal);
+                ExportNormal(ConverseNormal);
                 ExportTexture(ConverseAO);
                 ExportTexture(ConverseMetallic);
             }
@@ -320,14 +320,14 @@ public class ModelExport : MonoBehaviour
             {
                 ExportTexture(DC.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(DCHeight);
-                ExportTexture(DCNormal);
+                ExportNormal(DCNormal);
                 ExportTexture(DCAO);
             }
             if (Formal.activeSelf == true) //Crocs 
             {
                 ExportTexture(Formal.GetComponent<Renderer>().material.mainTexture as Texture2D);
                 ExportTexture(FormalHeight);
-                ExportTexture(FormalNormal);
+                ExportNormal(FormalNormal);
                 ExportTexture(FormalMetallic);
                 ExportTexture(FormalRoughness);
             }
