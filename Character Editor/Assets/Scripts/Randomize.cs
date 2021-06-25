@@ -76,7 +76,7 @@ public class Randomize : MonoBehaviour
         //200 value
         Ectomorph.value = Random.Range(-100, 100);
         Endomorph.value = Random.Range(-100, 100);
-        ForeheadSize.value = Random.Range(-100, 100);
+        ForeheadSize.value = Random.Range(-100, 70);
         ForeheadWidth.value = Random.Range(-100, 100);
         CheekbonesPos.value = Random.Range(-100, 100);
         NoseBWide.value = Random.Range(-100, 100);

@@ -99,6 +99,7 @@ public class ModelExport : MonoBehaviour
 
     public void OnClickEXPORT()
     {
+
         //Set rotation 0
         model.transform.rotation = Quaternion.identity;
 
@@ -145,7 +146,7 @@ public class ModelExport : MonoBehaviour
             Formal.transform.parent = ClothesInactive.transform;
 
         //fbx
-        FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", false, true);
+        FBXExporter.ExportGameObjToFBX(model, Application.dataPath + "EXPORTED_MODEL.fbx", false, false);
 
 
         //export materials
@@ -237,7 +238,7 @@ public class ModelExport : MonoBehaviour
                 ExportTexture(FormalMetallic);
             }
         }   
-        if (model.name == "Female_LP_BlendShapes") { 
+        else if (model.name == "Female_LP_BlendShapes") { 
             //Skin
             ExportTexture(Body.GetComponent<Renderer>().material.mainTexture as Texture2D);
             ExportTexture(BodyHeight);
